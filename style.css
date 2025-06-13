@@ -227,15 +227,17 @@ nav a:hover {
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: clamp(3px, 0.7vw, 7px);
   cursor: pointer;
 }
 
 .hamburger span {
-  height: 3px;
-  width: 25px;
+  height: clamp(2px, 0.5vw, 4px);
+  width: clamp(18px, 6vw, 32px);
   background: var(--nav-text);
   border-radius: 5px;
+  display: block;
+  transition: width 0.2s, height 0.2s;
 }
 
 @media (max-width: 900px) {
@@ -281,6 +283,22 @@ nav a:hover {
   nav.show {
     display: flex;
     opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--header-bg);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(80, 80, 160, 0.10);
+    border-radius: 0;
+    padding: 0;
+  }
+  nav a {
+    font-size: 1rem !important;
   }
   .header-group {
     flex-direction: row;
@@ -366,7 +384,7 @@ section {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
   margin-bottom: 1.2rem;
   color: var(--primary);
   font-family: 'Playfair Display', serif;
@@ -374,7 +392,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.35rem;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
   margin-top: 1.5rem;
   color: var(--accent);
   font-family: 'Poppins', sans-serif;
@@ -383,7 +401,7 @@ h2 {
 
 p, li {
   margin-bottom: 1rem;
-  font-size: 1.08rem;
+  font-size: clamp(0.98rem, 2.5vw, 1.08rem);
   color: #222a3a;
 }
 
@@ -700,6 +718,7 @@ a:focus, button:focus, .btn:focus, .btn-outline:focus, .hamburger:focus {
   input:checked + .slider:before {
     transform: translateX(1.4rem);
   }
-}
+
+  }
 
 
