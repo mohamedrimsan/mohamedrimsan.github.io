@@ -10,7 +10,9 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div class="bg0"></div>
+   <div class="bg"></div>
+	<div class="bg bg2"></div>
+	<div class="bg bg3"></div>
   <header>
    <div class="logo">Hi👋<br><span id="greeting"></span></div>
 
@@ -42,96 +44,190 @@
   </header>
 
   <section id="main-content" class="skills-section">
-    <h1>🔐 My Skills</h1>
-    <p>As an Information Technology undergraduate with a passion for cybersecurity, I specialize in Blue Team operations and Incident Response, focused on defending systems, detecting threats, and mitigating risks.</p>
-   
-    <h2>💻 Technical Skills</h2>
-    <h3>🛡️ Cybersecurity & Incident Response</h3>
-    <ul>
-      <li>Threat Detection & Response (SIEM: Splunk, ELK, Graylog)</li>
-      <li>Digital Forensics (Autopsy, FTK Imager, memory/log analysis)</li>
-      <li>Vulnerability Scanning & Exploitation (Nmap, Burp Suite, Metasploit)</li>
-      <li>EDR & Antivirus Management</li>
-      <li>Privilege Escalation Techniques</li>
-      <li>Web Security (OWASP Top 10)</li>
-    </ul>
+  <h1 class="project-card">🛡️ My Skillset</h1>
+  <p>Explore my cybersecurity capabilities — from foundational SOC skills to future-ready expertise.</p>
 
-    <h3>🔍 Network & System Fundamentals</h3>
-    <ul>
-      <li>OSI Model, TCP/IP, DNS, DHCP</li>
-      <li>Subnetting, Packet Analysis (Wireshark)</li>
-      <li>Linux & Windows Administration (Shell, PowerShell, Group Policy, AD)</li>
-    </ul>
-    
-    <h3>🔐 Cryptography & Secure Protocols</h3>
-    <ul>
-      <li>Hashing (SHA-256, MD5), Encryption (AES, RSA, ECC)</li>
-      <li>TLS/SSL Fundamentals</li>
-    </ul>
+  <!-- Technical Skills -->
+  <h2>🔧 Technical Skills</h2>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🖧 Networking Fundamentals</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">TCP/IP, DNS, HTTP, SSL</li>
+      </ul>
+    </article>
 
-    <h3>⚙️ Scripting & Automation</h3>
-    <ul>
-      <li>Python, PowerShell, Bash</li>
-      <li>Tool Creation & Automation Scripts</li>
-      <li>JavaScript for Browser-Based Security Testing</li>
-    </ul>
+    <article class="skill-card project-card">
+      <h3>💻 Operating Systems</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Windows &amp; Linux administration</li>
+      </ul>
+    </article>
 
-    <h3>☁️ Cloud Security</h3>
-    <ul>
-      <li>AWS & Azure Fundamentals</li>
-      <li>IAM, Security Groups</li>
-      <li>Cloud Monitoring & Logging</li>
-    </ul>
+    <article class="skill-card project-card">
+      <h3>🛠️ Security Tools</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">SIEM: Splunk, QRadar</li>
+        <li class="featured-card">Firewalls &amp; IDS/IPS</li>
+        <li class="featured-card">Endpoint Protection</li>
+      </ul>
+    </article>
 
-    <h3>📋 Compliance & Governance</h3>
-    <ul>
-      <li>ISO 27001, NIST, GDPR</li>
-      <li>Risk Assessments, Security Policies</li>
-    </ul>
-    <h2>🧠 Soft Skills</h2>
-    <h3>🧩 Analytical Thinking</h3>
-    <ul>
-      <li>Correlating log data across systems</li>
-      <li>Recognizing behavioral patterns in attacker activity</li>
-    </ul>
+    <article class="skill-card project-card">
+      <h3>🚨 Incident Response</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Triage alerts</li>
+        <li class="featured-card">Investigate threats</li>
+        <li class="featured-card">Escalate incidents</li>
+      </ul>
+    </article>
 
-    <h3>🗣️ Communication</h3>
-    <ul>
-      <li>Writing actionable incident reports</li>
-      <li>Presenting findings to stakeholders clearly</li>
-    </ul>
+        <article class="skill-card project-card">
+      <h3>📊 Log Analysis</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Server, firewall &amp; application logs</li>
+      </ul>
+    </article>
+  </div>
 
-    <h3>🤝 Team Collaboration</h3>
-    <ul>
-      <li>Coordinating with SOC analysts, threat hunters, and IT ops</li>
-      <li>Supporting tabletop exercises and red/blue simulations</li>
-    </ul>
+  <!-- Analytical Skills -->
+  <h2>🧠 Analytical Skills</h2>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🔍 Threat Detection</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Spot anomalies &amp; suspicious patterns</li>
+      </ul>
+    </article>
 
-    <h3>📈 Adaptability & Growth</h3>
-    <ul>
-      <li>Keeping up with latest attack vectors & TTPs</li>
-      <li>Continuously improving tools, processes, and playbooks</li>
-    </ul>
+    <article class="skill-card project-card">
+      <h3>🧩 Critical Thinking</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Differentiate real threats from false positives</li>
+      </ul>
+    </article>
 
-    <h3>⚖️ Integrity & Ethics</h3>
-    <ul>
-      <li>Handling sensitive data responsibly</li>
-      <li>Practicing discretion and professional responsibility</li>
-    </ul>
+    <article class="skill-card project-card">
+      <h3>🛠️ Problem Solving</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Investigate incidents</li>
+        <li class="featured-card">Recommend mitigation strategies</li>
+      </ul>
+    </article>
+  </div>
 
-    <h2>🧰 Tools & Platforms</h2>
-    <ul>
-      <li>SIEMs: Splunk, ELK, Wazuh</li>
-      <li>EDR: CrowdStrike, SentinelOne, Sysmon</li>
-      <li>Forensics: Autopsy, FTK Imager, Volatility</li>
-      <li>Automation: Python, PowerShell, Basht</li>
-      <li>Threat Intel: MISP, MITRE ATT&CK, VirusTotal, Any.run</li>
-      <li>Monitoring: Zeek, Suricata, OSQuery</li>
-    </ul>
-  </section>
+  <!-- Soft Skills -->
+  <h2>🗣️ Soft Skills</h2>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🗂️ Communication</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Clear reports for technical &amp; non-technical teams</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>🤝 Collaboration</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Work effectively across departments</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>🔄 Adaptability</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Respond calmly to evolving threats</li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Future-Ready Skills -->
+  <h2>🚀 Future-Ready Skills</h2>
+  <p>I’m actively building advanced capabilities to stay ahead in cybersecurity.</p>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🕵️‍♂️ Threat Hunting</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Proactive detection using behavioral analytics</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>☁️ Cloud Security</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">AWS, Azure, GCP fundamentals</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>🐍 Automation &amp; Scripting</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Python, PowerShell, Bash</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>🤖 AI/ML in Cybersecurity</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Exploring ML for smarter threat detection</li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Strategic & Leadership -->
+  <h2>🧩 Strategic &amp; Leadership Skills</h2>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🏗️ Security Architecture</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Understanding system design &amp; vulnerabilities</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>📉 Risk Management</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Prioritizing threats based on business impact</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>📜 Compliance Knowledge</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">GDPR, HIPAA, ISO standards</li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Continuous Learning -->
+  <h2>📚 Continuous Learning</h2>
+  <div class="skills-grid">
+    <article class="skill-card project-card">
+      <h3>🎓 Certifications (in progress)</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">Security+</li>
+        <li class="featured-card">CySA+</li>
+        <li class="featured-card">CEH</li>
+        <li class="featured-card">HTB Certified SOC Analyst</li>
+      </ul>
+    </article>
+
+    <article class="skill-card project-card">
+      <h3>🧪 Labs &amp; Simulations</h3>
+      <ul class="skill-badges">
+        <li class="featured-card">TryHackMe</li>
+        <li class="featured-card">Hack The Box</li>
+        <li class="featured-card">Lets Defend</li>
+        <li class="featured-card">Pico CTF</li>
+
+      </ul>
+    </article>
+  </div>
+</section>
+
   <!-- Footer -->
     <footer>
-        <p>&copy; 2025 MOHAMED RIMSAN. All Rights Reserved.</p>
+         <p> Created By MOHAMED RIMSAN | &copy; 2025 All Rights Reserved.</p>
     </footer>
 </body>
 </html>

@@ -29,9 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedText = document.getElementById("typed-text");
   if (typedText) {
     const words = [
-      "an IT Undergraduate",
-      "a Defensive Cybersecurity Enthusiast",
-      "a Tech Enthusiast"
+      "Aspiring SOC Analyst",
+      "Cybersecurity & Defensive Security Enthusiast",
     ];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
 

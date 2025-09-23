@@ -10,19 +10,27 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Background layers -->
   <div class="bg"></div>
   <div class="bg bg2"></div>
   <div class="bg bg3"></div>
+
+  <!-- Header -->
   <header>
-    <div class="logo">Hi👋<br><span id="greeting"></span></div>
+    <div class="logo">
+      Hi👋<br><span id="greeting"></span>
+    </div>
+
     <div id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" tabindex="0">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="skills.html">Skills</a>
       <a href="certifications.html">Certifications</a>
       <a href="hands-on-experience.html">Hands-On Experience</a>
@@ -30,9 +38,10 @@
       <a href="recommendations.html">Recommendations</a>
       <a href="contact.html">Contact Me</a>
     </nav>
+
     <div class="theme-switch-wrapper">
       <label class="theme-switch">
-        <input type="checkbox" id="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
         <span class="slider">
           <i class="fas fa-moon"></i>
           <i class="fas fa-sun"></i>
@@ -40,37 +49,106 @@
       </label>
     </div>
   </header>
-  <section id="main-content" class="about-section">
-    <div class="about-text">
-      <h1>About Me</h1>
-      <p id="justify">
-        I am Abdul Raheem Mohamed Rimsan, I am a passionate about cybersecurity enthusiast with a strong focus on becoming an incident responder and blue team member. My dedication to safeguarding digital environments drives me to continuously expand my knowledge and hone my skills in the ever-evolving field of cybersecurity.
-      </p>
-      <h2 id="myjourney">My Educational Journey</h2>
-      <p id="justify">
-        My journey started with a curiosity for how things work behind the scenes, which led me From my early interest in technology with a focus on science and technology, and eventually into pursuing a Bachelor’s degree in Information Technology. 
-      </p>
-        <div class="text-always-black">
-          <ul>
-            <li> 
-              <strong>Bachelor of science in Information Technology</strong> <br>
-              The Open University of Sri Lanka (OUSL), Sri Lanka <br>
-              Expected graduation date: November 2026
-            </li>
-            <li> 
-              <strong>Junior Cybersecurity Analyst </strong> <br>
-              Cisco Networking Academy <br>
-              Expected Completions date: December 2025
-            </li>
-            <li> 
-              <strong>GCE Advanced Level in Biological Science </strong> <br>
-              BT/Macan Markar National School Eravur, Eastern Province, Sri Lanka <br>
-              February 2021(2020) 
-            </li>
-          </ul>
-        </div>
-    </div>
-  </section>
+
+  <!-- Main Content -->
+    <section id="about" class="about-section" aria-label="About Me">
+      <div class="container">
+        <h1>👨 About Me</h1>
+
+        <p id="justify">
+          I’m <strong>Mohamed Rimsan</strong>, an IT undergraduate (BSc in Information Technology) with a growing
+          focus on <strong>Cybersecurity and SOC operations</strong>. Recently, I’ve been building my expertise
+          in defensive security through hands-on labs, threat detection exercises, and incident response
+          simulations.
+        </p>
+
+        <p id="justify">
+          My learning journey combines <strong>technical practice</strong> with a <strong>problem-solving mindset</strong>.
+          I’ve explored areas such as log analysis, digital forensics, and security monitoring, and I actively
+          reinforce my knowledge through research, labs, and continuous self-driven learning.
+        </p>
+
+        <p id="justify">
+          Prior work experience in IT support, customer service, and data management has strengthened my
+          <strong>communication</strong>, <strong>documentation</strong>, and <strong>team collaboration</strong> skills—
+          qualities I believe are essential for working in fast-paced security environments.
+        </p>
+
+        <p id="justify">
+          I’m now seeking <strong>entry-level opportunities or internships</strong> in a Security Operations Center (SOC)
+          or Blue Team role where I can contribute, learn from experienced professionals, and continue developing
+          into a well-rounded cybersecurity practitioner.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div class="container">
+        <h2 class="section-title project-card">👨🏻‍💻 My Educational Journey</h2>
+
+        <p id="justify">
+          My journey began with a natural curiosity about how technology works behind the scenes.
+          This early interest in science and computing gradually evolved into a focused passion for
+          <strong>Information Technology</strong> and, more recently, <strong>Cybersecurity</strong>.
+        </p>
+
+        <p id="justify">
+          Today, I’m pursuing a <strong>Bachelor of Science in Information Technology (BSc IT)</strong>,
+          where I’ve been building a strong foundation in networking, systems, and defensive security.
+          Recently, I’ve actively explored areas such as <strong>SOC operations, incident response,
+          and threat detection</strong> through labs, self-driven projects, and continuous learning.
+        </p>
+
+        <p id="justify">
+          My academic journey is not just about theory—it’s about translating knowledge into
+          <strong>practical skills</strong> that prepare me to contribute effectively in professional
+          cybersecurity environments.
+        </p>
+      </div>
+
+      <!-- Education Cards Box -->
+<div class="project-card">
+  <div class="cards-grid">
+    <article class="project-card cert-card">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <div class="meta">
+        <span class="badge">The Open University of Sri Lanka (OUSL)</span>
+        <span class="badge">Expected: Nov 2026</span>
+      </div>
+    </article>
+
+    <article class="project-card cert-card">
+      <h3>Blue Team Junior Analyst</h3>
+      <div class="meta">
+        <span class="badge">Security Blue Team</span>
+          <span class="badge">Expected: Dec 2025</span>
+        <!--<span class="badge">Nov 2025 - Dec 2025</span>-->
+      </div>
+    </article>
+
+    <article class="project-card cert-card">
+      <h3>Google Cybersecurity professional</h3>
+      <div class="meta">
+        <span class="badge">Coursera</span>
+        <span class="badge">Expected: Nov 2025</span>
+        <!--<span class="badge">Aug 2025 - Dec 2025</span>-->
+      </div>
+    </article>
+
+    <article class="project-card cert-card">
+      <h3>Junior Cybersecurity Analyst</h3>
+      <div class="meta">
+        <span class="badge">Cisco Networking Academy</span>
+        <span class="badge">Jan 2025 - Jul 2025</span>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+    </section>
+
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 MOHAMED RIMSAN. All Rights Reserved.</p>
   </footer>
