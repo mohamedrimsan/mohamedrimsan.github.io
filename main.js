@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.getElementById("theme-toggle");
   const nav = document.querySelector("nav");
   const hamburger = document.querySelector(".hamburger");
 
-  // Theme Setup
-  let savedTheme = localStorage.getItem("theme") || (
-    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-  );
-  document.documentElement.setAttribute("data-theme", savedTheme);
-  if (themeToggle) themeToggle.checked = savedTheme === "dark";
+// Automatically apply system theme
+const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+document.documentElement.setAttribute("data-theme", systemPrefersDark ? "dark" : "light");
 
-  themeToggle?.addEventListener("change", function () {
-    const newTheme = this.checked ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  });
+// Optional: dynamically change theme if system preference changes
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+  document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "light");
+});
 
   // Greeting Message
   const greetingElement = document.getElementById("greeting");
@@ -68,5 +63,31 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       toggleNav();
     }
+  });
+});
+
+// === Certificate Popup Handling ===
+document.querySelectorAll('.view-cert-text').forEach(trigger => {
+  trigger.addEventListener('click', function (event) {
+    event.stopPropagation();
+    document.querySelectorAll('.popup').forEach(p => p.classList.remove('active'));
+
+    const targetId = this.getAttribute('data-popup');
+    const popup = document.getElementById(targetId);
+    if (popup) popup.classList.add('active');
+  });
+});
+
+document.addEventListener('click', () => {
+  document.querySelectorAll('.popup').forEach(p => p.classList.remove('active'));
+});
+
+document.querySelectorAll('.popup').forEach(popup => {
+  popup.addEventListener('click', e => e.stopPropagation());
+});
+
+document.querySelectorAll('.popup .close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.popup').classList.remove('active');
   });
 });
