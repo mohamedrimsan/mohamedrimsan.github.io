@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  margin: 0;
   padding: 0;
   background: url('Background_dark.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -854,19 +853,25 @@ footer a:hover { color: var(--primary); border-color: var(--primary); }
     transform: translateY(0);
   }
 }
-.featured-card:hover,
 .text-always-black:hover,
 .project-card:hover,
 .certifications-text:hover,
 .recommendations-text:hover,
 .experience-text:hover {
   box-shadow: 0 22px 60px rgba(80, 80, 160, 0.2), 0 6px 18px rgba(0,0,0,0.18);
+  transform: translateY(-8px);
+  transform-origin: center top;
+  z-index: 99; /* bring to front on hover (front animation) */
+  filter: saturate(1.03) brightness(1.02);
+}
+
+.featured-card:hover{
+
+  box-shadow: 0 22px 60px rgba(80, 80, 160, 0.2), 0 6px 18px rgba(0,0,0,0.18);
   transform: translateY(-8px) scale(1.05);
   transform-origin: center top;
   z-index: 99; /* bring to front on hover (front animation) */
   filter: saturate(1.03) brightness(1.02);
-
-  
 }
 /* Text alignment utility */
 .justify {
@@ -888,18 +893,6 @@ footer a:hover { color: var(--primary); border-color: var(--primary); }
   will-change: transform, box-shadow;
   transform-origin: center top;
 }
-
-/* === HOME SECTION === */
-/*.home-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}*/
 
 .home-section,
 .home-section0 {
