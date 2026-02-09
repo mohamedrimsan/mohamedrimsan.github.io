@@ -26,7 +26,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e =
   if (typedText) {
     const words = [
       "Aspiring SOC Analyst",
-      "Cybersecurity Internship Candidate",
+      "SOC / Blue Team Intern",
       "IT Internship Candidate",
       "Defensive Security Enthusiast",
     ];
