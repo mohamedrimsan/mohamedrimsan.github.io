@@ -757,12 +757,14 @@ p, li {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .socials img {
   width: 40px;
   height: auto;
   display: block;
+  max-width: 100%;
 }
 
 .socials a img {
@@ -773,6 +775,19 @@ p, li {
 .socials a:focus-visible img {
   transform: translateY(-2px) scale(1.12);
   filter: drop-shadow(0 8px 18px rgba(109,40,217,0.35));
+}
+
+/* Responsive wrapper for TryHackMe embed */
+.thm-embed {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thm-embed iframe {
+  width: 100%;
+  min-height: 180px;
 }
 
 /* === FOOTER === */
@@ -1124,6 +1139,15 @@ a:focus, button:focus, .btn:focus, .btn-outline:focus, .hamburger:focus {
   .popup-img {
     max-width: 95vw;
     max-height: 80vh;
+  }
+
+  /* Tighter layout for very small screens */
+  .socials.project-card {
+    gap: 8px;
+  }
+
+  .thm-embed iframe {
+    min-height: 240px; /* ensure the badge has room on small screens */
   }
 }
 
