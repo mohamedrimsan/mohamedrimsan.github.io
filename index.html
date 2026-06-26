@@ -1,73 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Rimsan - Portfolio</title>
+  <meta name="description" content="Professional portfolio of Mohamed Rimsan, a QA & Security Engineer Trainee focused on QA engineering, cybersecurity, application security, vulnerability management, cloud security validation, and GRC." />
+  <title>Home | Mohamed Rimsan</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="main.js" defer></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div class="bg"></div>
-  <div class="bg bg2"></div>
-  <div class="bg bg3"></div>
   <header>
-    <div class="logo">Hi👋<br><span id="greeting"></span></div>
-    <div id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" tabindex="0">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="brand">
+      <span class="brand-mark">Mohamed Rimsan</span>
+      <span class="brand-subtitle">QA & Security Engineer Trainee</span>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="certifications.html">Certifications</a>
-      <a href="hands-on-experience.html">Hands-On Experience</a>
-      <a href="experience.html">Working Experience</a>
-      <a href="recommendations.html">Recommendations</a>
-      <a href="contact.html">Contact Me</a>
-    </nav>
+    <div class="header-actions">
+      <button class="hamburger" type="button" aria-label="Toggle navigation"><i class="fa-solid fa-bars" aria-hidden="true"></i><span>Menu</span></button>
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
+        <a href="about.html"><i class="fa-solid fa-user" aria-hidden="true"></i><span>About</span></a>
+        <a href="experience.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Experience</span></a>
+        <a href="projects.html"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Projects</span></a>
+        <a href="skills.html"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><span>Skills</span></a>
+        <a href="certifications.html"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span>Certifications</span></a>
+        <a href="recommendations.html"><i class="fa-solid fa-comments" aria-hidden="true"></i><span>Recommendations</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+      </nav>
+    </div>
   </header>
-  <section id="main-content" class="home-section">
-    <img class="home-avatar featured-card" src="Images\avatar.jpg" alt="Portrait of Mohamed Rimsan"/>
-    <h1 class="special">Hello, I’m Mohamed Rimsan</h1>
-    <h2><span id="typed-text" class="project-card"></span></h2>
 
-    <Br>
-    <p>
-      I am a Third-year BSc (Hons) Information Technology undergraduate with a strong interest in Defensive Security and Blue Team operations. 
-      Through hands-on labs, SOC simulations, and self-driven projects, I have developed practical exposure to threat detection, incident 
-      response, log analysis, and digital forensics fundamentals. Alongside my cybersecurity focus, I possess a solid foundation in systems, 
-      networking, and IT operations, enabling me to understand both infrastructure and security perspectives.<br><br> Committed to continuous learning, 
-      I am actively strengthening my technical expertise to adapt to evolving cyber threats and modern IT environments. I am eager to contribute to a forward-thinking 
-      IT or cybersecurity team, apply my growing knowledge in real-world scenarios, and progressively develop into a skilled SOC Analyst or Cybersecurity professional.
-    </p>
+  <main id="main-content">
+    <section class="hero home-hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> QA Engineering | Cybersecurity | GRC</span>
+        <h1>Engineering Quality. Securing Digital Solutions.</h1>
+        <p class="hero-subtitle">QA &amp; Security Engineer Trainee | Cybersecurity | Application Security | Cloud Security | GRC</p>
+        <p>Helping organizations build secure, reliable, and high-quality digital solutions through application security, software quality assurance, vulnerability management, cloud security validation, and governance, risk &amp; compliance.</p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>View Projects</span></a>
+          <a class="btn-outline" href="experience.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>View Experience</span></a>
+          <a class="btn-outline" href="contact.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Contact Me</span></a>
+        </div>
+      </div>
+      <div class="hero-visual home-visual" aria-label="Professional focus overview">
+        <div class="portrait-card">
+          <img src="Images/avatar.jpg" alt="Portrait of Mohamed Rimsan" />
+        </div>
+        <div class="mini-grid">
+          <div class="metric-card"><i class="fa-solid fa-bug-slash" aria-hidden="true"></i><span class="metric-value">Application Security</span><span class="metric-label">Testing, review, and remediation validation</span></div>
+          <div class="metric-card"><i class="fa-solid fa-list-check" aria-hidden="true"></i><span class="metric-value">QA Engineering</span><span class="metric-label">Functional, UAT, regression, and defect workflows</span></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="buttons">
-      <a href="Resume/AR_Mohamed_Rimsan_Cybersecurity_IT_Support_Intern_Resume.pdf" class="btn-outline" download="AR_Mohamed_Rimsan_Cybersecurity_IT_Support_Intern_Resume.pdf">My Resume</a>
-      <a href="contact.html" class="btn-outline">Contact Me</a>
-    </div>
-    <div class="home-section0">
-      <p>
-        “If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you."
-      </p>
-      <p>
-        - Zig Ziglar -
-      </p>
-    </div>
+    <section class="content-section home-summary">
+      <div class="section-header">
+        <div class="section-copy">
+          <span class="eyebrow"><i class="fa-solid fa-user-shield" aria-hidden="true"></i> Professional Summary</span>
+          <h2>Security-minded quality engineering for reliable digital delivery</h2>
+        </div>
+      </div>
+      <div class="card summary-card">
+        <p>I am a QA &amp; Security Engineer Trainee and BSc (Hons) Information Technology undergraduate with practical experience in cybersecurity, software quality assurance, vulnerability management, cloud security validation, governance, risk &amp; compliance, and secure software delivery.</p>
+        <p>My work includes web application security assessments, API testing, vulnerability analysis, quality assurance testing, deployment verification, governance reviews, and production readiness validation for enterprise-grade digital platforms.</p>
+        <p>I focus on building resilient software by combining application security thinking, QA discipline, deployment validation, and practical risk awareness.</p>
+      </div>
+    </section>
 
-    <img class="home-avatar0" src="Images/business-person-futuristic-business-environment.jpg" alt="Illustration of a computer, representing technology passion" width="200" height="200" />
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-copy">
+          <span class="eyebrow"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i> Core Focus Areas</span>
+          <h2>Where security validation and quality assurance connect</h2>
+        </div>
+      </div>
+      <div class="grid-4 focus-grid">
+        <article class="focus-card"><span class="icon-badge"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><h3>Application Security</h3><ul class="list"><li>Web application security testing</li><li>Vulnerability assessment</li><li>Security review support</li><li>Remediation validation</li></ul></article>
+        <article class="focus-card"><span class="icon-badge"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span><h3>QA Engineering</h3><ul class="list"><li>Manual testing</li><li>Functional testing</li><li>UAT support</li><li>Regression validation</li><li>Workflow testing</li><li>Defect management</li></ul></article>
+        <article class="focus-card"><span class="icon-badge"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span><h3>Cloud Security Validation</h3><ul class="list"><li>AWS deployment verification</li><li>Environment checks</li><li>Release readiness validation</li><li>Infrastructure security awareness</li></ul></article>
+        <article class="focus-card"><span class="icon-badge"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span><h3>Governance, Risk &amp; Compliance</h3><ul class="list"><li>Security reporting</li><li>Compliance review support</li><li>Risk documentation</li><li>Governance-focused technical analysis</li></ul></article>
+      </div>
+    </section>
 
+    <section class="content-section spotlight">
+      <div class="card">
+        <span class="eyebrow"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> What I Bring</span>
+        <h2>Security Validation with QA Discipline</h2>
+        <ul class="list">
+          <li>Web application security testing and vulnerability assessment experience.</li>
+          <li>API testing, QA validation, UAT support, and defect tracking through Jira.</li>
+          <li>AWS deployment verification, security review support, and production readiness validation.</li>
+          <li>Risk, compliance, and governance reporting support with a practical delivery mindset.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="eyebrow"><i class="fa-solid fa-compass" aria-hidden="true"></i> Current Focus</span>
+        <h2>Security, Quality &amp; Risk-Focused Engineering</h2>
+        <div class="headline-strip focus-tags">
+          <span class="tag"><i class="fa-solid fa-lock" aria-hidden="true"></i> Application Security</span>
+          <span class="tag"><i class="fa-solid fa-plug" aria-hidden="true"></i> API Security Testing</span>
+          <span class="tag"><i class="fa-solid fa-bug" aria-hidden="true"></i> Vulnerability Management</span>
+          <span class="tag"><i class="fa-solid fa-list-check" aria-hidden="true"></i> QA Engineering</span>
+          <span class="tag"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud Security Validation</span>
+          <span class="tag"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> Governance, Risk &amp; Compliance</span>
+          <span class="tag"><i class="fa-solid fa-headset" aria-hidden="true"></i> Security Operations</span>
+          <span class="tag"><i class="fa-solid fa-shield" aria-hidden="true"></i> Defensive Security</span>
+        </div>
+      </div>
+    </section>
 
-  </section>
-  
-  
-  <!-- Footer -->
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-copy">
+          <span class="eyebrow"><i class="fa-solid fa-star" aria-hidden="true"></i> Professional Highlights</span>
+          <h2>Practical work across security assessment, QA, release readiness, and documentation</h2>
+        </div>
+      </div>
+      <div class="grid-3 highlights-grid">
+        <article class="highlight-card"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Conducted web application security assessment activities.</span></article>
+        <article class="highlight-card"><i class="fa-solid fa-bug-slash" aria-hidden="true"></i><span>Performed vulnerability analysis and remediation validation.</span></article>
+        <article class="highlight-card"><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span>Executed API testing using Postman and Swagger.</span></article>
+        <article class="highlight-card"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i><span>Supported AWS deployment verification and release readiness checks.</span></article>
+        <article class="highlight-card"><i class="fa-brands fa-jira" aria-hidden="true"></i><span>Managed defects, issues, and enhancement tracking through Jira.</span></article>
+        <article class="highlight-card"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>Supported UAT, functional testing, and production readiness validation.</span></article>
+        <article class="highlight-card"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Prepared cybersecurity, compliance, and governance-related documentation.</span></article>
+      </div>
+    </section>
+
+    <section class="content-section grid-2">
+      <article class="card">
+        <span class="eyebrow"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub &amp; Project Activity</span>
+        <h2>Code-based learning, experimentation, and security practice</h2>
+        <p>My GitHub profile complements this portfolio by showing code-based learning, project development, technical experimentation, and security-related practice.</p>
+        <ul class="list">
+          <li>Frontend, Java, Python, and security-related project work.</li>
+          <li>Portfolio development and engineering experiments.</li>
+          <li>Cybersecurity, QA, and cloud security learning projects.</li>
+          <li>Public project activity that supports the practical work shown across this site.</li>
+        </ul>
+        <a class="cert-preview" href="https://github.com/mohamedrimsan" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit GitHub Profile</a>
+      </article>
+      <article class="card">
+        <span class="eyebrow"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> Explore My Work</span>
+        <h2>Experience, projects, and supporting credentials</h2>
+        <div class="grid-3 explore-grid">
+          <article class="project-card"><h3><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</h3><p>View my QA, security testing, deployment validation, IT support, and operational responsibilities.</p><a class="cert-preview" href="experience.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Open Experience</a></article>
+          <article class="project-card"><h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Projects</h3><p>Explore professional initiatives, cybersecurity projects, QA-related work, home lab activities, OWASP testing, and cloud security experiments.</p><a class="cert-preview" href="projects.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Open Projects</a></article>
+          <article class="project-card"><h3><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certifications</h3><p>Browse certifications across cybersecurity, cloud, networking, development, IT support, and professional learning tracks.</p><a class="cert-preview" href="certifications.html"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Open Certifications</a></article>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section closing-card">
+      <div class="card">
+        <span class="eyebrow"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Closing Statement</span>
+        <h2>Trusted delivery starts with quality, security, and practical risk awareness.</h2>
+        <p>I am passionate about improving software quality, identifying security weaknesses, supporting secure delivery, and helping teams build trusted digital platforms.</p>
+      </div>
+    </section>
+  </main>
+
   <footer>
-     <p> Created By MOHAMED RIMSAN | &copy; 2025 - 2026 All Rights Reserved.</p>
+    <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Building Secure Systems &bull; Improving Software Quality &bull; Managing Risk</span>
+    <span><i class="fa-regular fa-copyright" aria-hidden="true"></i> 2026 - 2027 Mohamed Rimsan</span>
   </footer>
 </body>
 </html>
