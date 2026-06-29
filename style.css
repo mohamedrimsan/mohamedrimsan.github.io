@@ -169,7 +169,6 @@ nav a.active {
   color: var(--primary);
 }
 
-
 .hamburger {
   display: none;
   align-items: center;
@@ -275,6 +274,9 @@ p {
 
 .section-copy {
   max-width: 780px;
+  display: grid;
+  justify-items: start;
+  gap: 0.72rem;
 }
 
 .section-copy p,
@@ -294,6 +296,19 @@ p {
 .hero-copy p {
   max-width: 68ch;
   font-size: 1.02rem;
+}
+
+.eyebrow + h2,
+.eyebrow + h3 {
+  margin-top: 0.72rem;
+}
+
+.section-copy .eyebrow + h2,
+.section-copy .eyebrow + h3,
+.section-copy h2,
+.section-copy h3,
+.section-copy p {
+  margin-top: 0;
 }
 
 .content-section {
@@ -1013,7 +1028,6 @@ footer {
   }
 }
 .project-card h3 i,
-.section-copy .eyebrow i,
 .cert-preview i {
   color: var(--primary);
   margin-right: 0.35rem;
@@ -1047,8 +1061,14 @@ footer {
   margin-bottom: 0.65rem;
 }
 
+.home-summary .section-copy {
+  max-width: 780px;
+  width: 100%;
+}
+
 .summary-card {
-  max-width: 940px;
+  max-width: none;
+  width: 100%;
 }
 
 .focus-card,
@@ -1097,6 +1117,30 @@ footer {
 
 .highlight-card i {
   margin-top: 0.2rem;
+}
+
+.github-activity-media {
+  margin-top: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+}
+
+.github-activity-media img {
+  width: 100%;
+  height: clamp(180px, 24vw, 260px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.github-profile-link {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
 }
 
 .explore-grid {
