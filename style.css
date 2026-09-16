@@ -444,7 +444,9 @@ button[type='reset']:hover {
 }
 
 .portrait-card img {
+  display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1.03;
   object-fit: cover;
   border-radius: var(--radius-sm);
@@ -1049,10 +1051,40 @@ footer {
 
 .home-hero {
   position: relative;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.68fr);
+  align-items: center;
   background:
     radial-gradient(circle at 82% 18%, rgba(124, 58, 237, 0.24), transparent 30%),
     radial-gradient(circle at 18% 22%, rgba(34, 211, 238, 0.18), transparent 34%),
     linear-gradient(180deg, var(--surface-strong), var(--surface));
+}
+
+.home-hero .hero-copy {
+  min-width: 0;
+  align-self: center;
+}
+
+.home-visual {
+  width: 100%;
+  max-width: 430px;
+  justify-self: end;
+  align-self: center;
+}
+
+.home-visual .portrait-card {
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-visual {
+    width: min(100%, 460px);
+    margin-inline: auto;
+    justify-self: center;
+  }
 }
 
 .home-visual .metric-card i {
@@ -1394,6 +1426,11 @@ footer {
   gap: 1rem;
 }
 
+.single-line-role-title {
+  font-size: clamp(1.05rem, 4.8vw, 2rem);
+  white-space: nowrap;
+}
+
 .role-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1408,6 +1445,32 @@ footer {
 
 .role-details > div {
   min-width: 0;
+}
+
+.primary-role .role-details,
+.intern-role .role-details,
+.support-role .role-details {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.primary-role .role-details > div:first-child .list,
+.intern-role .role-details > div:first-child .list,
+.support-role .role-details > div:first-child .list {
+  display: block;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.primary-role .role-details > div:first-child .list li,
+.intern-role .role-details > div:first-child .list li,
+.support-role .role-details > div:first-child .list li {
+  break-inside: avoid;
+  margin-bottom: 0.7rem;
+}
+
+.primary-role .role-focus-list,
+.intern-role .role-focus-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .role-exposure-panel {
@@ -1466,6 +1529,17 @@ footer {
 
   .role-meta {
     justify-content: flex-start;
+  }
+
+  .primary-role .role-details > div:first-child .list,
+.intern-role .role-details > div:first-child .list,
+.support-role .role-details > div:first-child .list {
+    columns: 1;
+  }
+
+  .primary-role .role-focus-list,
+.intern-role .role-focus-list {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -2268,6 +2342,17 @@ footer {
 
 .recommendation-person h3 {
   font-size: 1.02rem;
+}
+
+.recommendation-person h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.recommendation-person h3 a:hover,
+.recommendation-person h3 a:focus-visible {
+  color: var(--primary-light);
+  text-decoration: underline;
 }
 
 .recommendation-person p {
