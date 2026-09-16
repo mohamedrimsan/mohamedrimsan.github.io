@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedText = document.getElementById('typed-text');
   const phrases = [
     'Cybersecurity Professional',
-    'QA & Security Engineer Trainee',
+    'QA & Security Engineer',
     'Application Security',
     'Vulnerability Management',
     'Cloud Security',
