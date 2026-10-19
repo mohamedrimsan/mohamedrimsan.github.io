@@ -1,0 +1,159 @@
+REDESIGN REVIEW — no commit/push/merge/deploy
+
+Branch: redesign/technical-support-portfolio
+Baseline / rollback: 63a5cb3
+Origin main: 22e1b27 (same tree as baseline)
+Local main unchanged: d05f3f1
+
+Tracked site changes vs starting checkout:
+ README.md                |   67 +-
+ about.html               |  318 ++---
+ certifications.html      |  409 +++----
+ contact.html             |  265 ++--
+ experience.html          |  341 +++---
+ hands-on-experience.html |   15 +-
+ index.html               |  307 ++---
+ main.js                  |  382 +++---
+ projects.html            |  643 +++++-----
+ recommendations.html     |  317 +++--
+ sitemap.xml              |   16 +-
+ skills.html              |  306 +++--
+ style.css                | 3012 ++++------------------------------------------
+ 13 files changed, 1783 insertions(+), 4615 deletions(-)
+
+Tracked per-file line additions/deletions:
+53	14	README.md
+115	203	about.html
+193	216	certifications.html
+121	144	contact.html
+162	179	experience.html
+8	7	hands-on-experience.html
+77	230	index.html
+195	187	main.js
+298	345	projects.html
+153	164	recommendations.html
+8	8	sitemap.xml
+144	162	skills.html
+256	2756	style.css
+
+Full working-tree file status (includes new assets, QA outputs and owner-provided handoff):
+ M README.md
+ M about.html
+ M certifications.html
+ M contact.html
+ M experience.html
+ M hands-on-experience.html
+ M index.html
+ M main.js
+ M projects.html
+ M recommendations.html
+ M sitemap.xml
+ M skills.html
+ M style.css
+?? Images/favicon.svg
+?? Images/optimized/certificates/scan-01.webp
+?? Images/optimized/certificates/scan-02.webp
+?? Images/optimized/certificates/scan-03.webp
+?? Images/optimized/certificates/scan-04.webp
+?? Images/optimized/certificates/scan-05.webp
+?? Images/optimized/certificates/scan-06.webp
+?? Images/optimized/certificates/scan-07.webp
+?? Images/optimized/certificates/scan-08.webp
+?? Images/optimized/certificates/scan-09.webp
+?? Images/optimized/certificates/scan-10.webp
+?? Images/optimized/certificates/scan-11.webp
+?? Images/optimized/certificates/scan-12.webp
+?? Images/optimized/certificates/scan-13.webp
+?? Images/optimized/certificates/scan-14.webp
+?? Images/optimized/certificates/scan-15.webp
+?? Images/optimized/certificates/scan-16.webp
+?? Images/optimized/certificates/scan-17.webp
+?? Images/optimized/certificates/scan-18.webp
+?? Images/optimized/certificates/scan-19.webp
+?? Images/optimized/certificates/scan-20.webp
+?? Images/optimized/certificates/scan-21.webp
+?? Images/optimized/certificates/scan-22.webp
+?? Images/optimized/certificates/scan-23.webp
+?? Images/optimized/certificates/scan-24.webp
+?? Images/optimized/certificates/scan-25.webp
+?? Images/optimized/certificates/scan-26.webp
+?? Images/optimized/certificates/scan-27.webp
+?? Images/optimized/certificates/scan-28.webp
+?? Images/optimized/certificates/scan-29.webp
+?? Images/optimized/certificates/scan-30.webp
+?? Images/optimized/certificates/scan-31.webp
+?? Images/optimized/certificates/scan-32.webp
+?? Images/optimized/certificates/scan-33.webp
+?? Images/optimized/certificates/scan-34.webp
+?? Images/optimized/certificates/scan-35.webp
+?? Images/optimized/certificates/scan-36.webp
+?? Images/optimized/certificates/scan-37.webp
+?? Images/optimized/certificates/scan-38.webp
+?? Images/optimized/certificates/scan-39.webp
+?? Images/optimized/certificates/scan-40.webp
+?? Images/optimized/certificates/scan-41.webp
+?? Images/optimized/certificates/scan-42.webp
+?? Images/optimized/certificates/scan-43.webp
+?? Images/optimized/certificates/scan-44.webp
+?? Images/optimized/certificates/scan-45.webp
+?? Images/optimized/certificates/scan-46.webp
+?? Images/optimized/certificates/scan-47.webp
+?? Images/optimized/certificates/scan-48.webp
+?? Images/optimized/certificates/scan-49.webp
+?? Images/optimized/certificates/scan-50.webp
+?? Images/optimized/portrait-320.webp
+?? Images/optimized/portrait-640.webp
+?? QA_REPORT.md
+?? REDESIGN_CHANGELOG.md
+?? REDESIGN_CONTENT_DECISIONS.md
+?? portfolio_redesign_handoff/IMPLEMENTATION_PROMPT.md
+?? portfolio_redesign_handoff/PORTFOLIO_CODEBASE_AUDIT.md
+?? portfolio_redesign_handoff/REDESIGN_BLUEPRINT.md
+?? qa/accessibility-results.json
+?? qa/baseline-vs-main.txt
+?? qa/browser-results.json
+?? qa/contrast-results.json
+?? qa/evidence-baseline.json
+?? qa/hosting-checks.json
+?? qa/lighthouse-certifications.json
+?? qa/lighthouse-contact.json
+?? qa/lighthouse-index.json
+?? qa/lighthouse-projects.json
+?? qa/lighthouse-summary.json
+?? qa/outbound-links.json
+?? qa/preview-assets.json
+?? qa/redesign-diff-summary.txt
+?? qa/screenshots/certifications-light-1440.png
+?? qa/screenshots/contact-dark-1440.png
+?? qa/screenshots/index-dark-1440.png
+?? qa/screenshots/index-light-1440.png
+?? qa/screenshots/index-light-375.png
+?? qa/screenshots/projects-light-1440.png
+?? qa/source-scan.json
+?? qa/static-results.json
+?? requirements-qa.txt
+?? scripts/accessibility_qa.py
+?? scripts/browser_qa.py
+?? scripts/verify_site.py
+
+The portfolio_redesign_handoff/ files are owner-provided reference documents and were not edited.
+
+Current site tracked diff vs deployed origin/main:
+ README.md                |   67 +-
+ about.html               |  318 ++---
+ certifications.html      |  409 +++----
+ contact.html             |  265 ++--
+ experience.html          |  341 +++---
+ hands-on-experience.html |   15 +-
+ index.html               |  307 ++---
+ main.js                  |  382 +++---
+ projects.html            |  643 +++++-----
+ recommendations.html     |  317 +++--
+ sitemap.xml              |   16 +-
+ skills.html              |  306 +++--
+ style.css                | 3012 ++++------------------------------------------
+ 13 files changed, 1783 insertions(+), 4615 deletions(-)
+
+Inspect the complete tracked patch with: git diff origin/main
+Inspect new files separately; they are untracked pending a review-branch commit.
+Rollback/release guidance: README.md

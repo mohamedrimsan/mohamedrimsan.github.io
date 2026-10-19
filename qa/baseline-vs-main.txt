@@ -1,0 +1,58 @@
+ .gitignore                                         |   31 +
+ Badges/AI Security Fundamentals_Badge.png          |  Bin 0 -> 29445 bytes
+ Badges/iso-iec-27701-2025-lead-auditor.png         |  Bin 0 -> 388321 bytes
+ Certificates/AI Security Fundamentals!_Cert.jpg    |  Bin 0 -> 163697 bytes
+ ...ficial Intelligence Security & Risk (CAISR).jpg |  Bin 0 -> 911408 bytes
+ Certificates/ISOIEC 277012025 Lead Auditor.jpg     |  Bin 0 -> 1251242 bytes
+ Certificates/Introduction to Software Testing.jpg  |  Bin 0 -> 2180187 bytes
+ Images/avatar.jpg                                  |  Bin 108073 -> 2049383 bytes
+ Resume/AR-Mohamed-Rimsan-Resume.pdf                |  Bin 0 -> 234801 bytes
+ ...msan_Cybersecurity_IT_Support_Intern_Resume.pdf |  Bin 194296 -> 0 bytes
+ Resume/generate_resume.py                          |  121 +
+ about.html                                         |  383 +--
+ certifications.html                                |  683 ++--
+ contact.html                                       |  194 +-
+ experience.html                                    |  258 +-
+ googlec5a2878c58ee90d7.html                        |    1 +
+ hands-on-experience.html                           |  302 +-
+ index.html                                         |  267 +-
+ main.js                                            |  277 +-
+ projects.html                                      |  356 ++
+ recommendations.html                               |  222 +-
+ robots.txt                                         |    4 +
+ sitemap.xml                                        |   11 +
+ skills.html                                        |  438 +--
+ style.css                                          | 3487 ++++++++++++++------
+ 25 files changed, 4413 insertions(+), 2622 deletions(-)
+
+Exact file status:
+A	.gitignore
+A	Badges/AI Security Fundamentals_Badge.png
+A	Badges/iso-iec-27701-2025-lead-auditor.png
+A	Certificates/AI Security Fundamentals!_Cert.jpg
+A	Certificates/Certified Artificial Intelligence Security & Risk (CAISR).jpg
+A	Certificates/ISOIEC 277012025 Lead Auditor.jpg
+A	Certificates/Introduction to Software Testing.jpg
+M	Images/avatar.jpg
+A	Resume/AR-Mohamed-Rimsan-Resume.pdf
+D	Resume/AR_Mohamed_Rimsan_Cybersecurity_IT_Support_Intern_Resume.pdf
+A	Resume/generate_resume.py
+M	about.html
+M	certifications.html
+M	contact.html
+M	experience.html
+A	googlec5a2878c58ee90d7.html
+M	hands-on-experience.html
+M	index.html
+M	main.js
+A	projects.html
+M	recommendations.html
+A	robots.txt
+A	sitemap.xml
+M	skills.html
+M	style.css
+
+Deployment reconciliation:
+Local main: d05f3f1373a70756484897dea11b567d1f2612be
+Origin main (matches public deployed commit): 22e1b27dfa658c574a199fc1a6b4f35316469dd5
+Baseline 63a5cb3 vs origin/main: identical trees; git diff --name-status origin/main 63a5cb3 returned no changes.

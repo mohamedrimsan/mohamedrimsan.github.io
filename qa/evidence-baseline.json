@@ -1,0 +1,774 @@
+{
+  "baseline": "63a5cb3",
+  "projects": [
+    {
+      "label": "SAĜO MENTE Security & QA Initiatives",
+      "categories": "professional qa-security application-security cloud-security",
+      "text": "Professional Professional Experience | QA & Security SAĜO MENTE Security & QA Initiatives Security and QA-related initiatives supporting platform quality, security validation, deployment readiness, and governance-aligned documentation for a global digital marketplace platform. QA Testing Security Testing Application Security API Testing Vulnerability Management AWS Validation GRC Jira Key contributions Supported web application security testing across platform workflows. Performed vulnerability review and remediation validation support. Conducted API testing and request validation using Postman and Swagger. Supported QA testing, UAT execution, regression validation, and workflow checks. Logged, tracked, and validated issues, bugs, and enhancements through Jira. Assisted with AWS deployment verification and production readiness checks. Prepared cybersecurity, compliance, GRC, and testing-related documentation. View Experience",
+      "links": [
+        "experience.html"
+      ],
+      "images": []
+    },
+    {
+      "label": "AssureX – Enterprise Quality, Security & Risk Assurance Platform",
+      "categories": "professional qa-security application-security cloud-security academic-projects software-development",
+      "text": "Completed Enterprise QA, Security & Risk Platform | May 2026 - Aug 2026 AssureX – Enterprise Quality, Security & Risk Assurance Platform AssureX is a full-stack quality, security, and risk assurance platform designed to centralize software QA, vulnerability management, remediation tracking, security risks, and audit activities within a single system. Next.js TypeScript Tailwind CSS Prisma ORM PostgreSQL JWT MFA Playwright Docker Security Headers Audit Logging Platform capabilities Provides dedicated QA and Security workspaces with secure authentication, role-based access control, and multi-factor authentication. Supports QA test case creation, execution management, and automated Playwright end-to-end testing. Centralizes vulnerability, remediation, asset, and security risk management. Uses CVSS v3.1 scoring to support risk assessment and prioritization. Includes security audit logging, application security controls, and security headers. Provides executive dashboards, operational reporting, and downloadable PDF security reports. View Project",
+      "links": [
+        "https://assurex-eight.vercel.app"
+      ],
+      "images": []
+    },
+    {
+      "label": "VeriGuard – Hybrid QA Automation & Testing Platform",
+      "categories": "professional qa-security application-security software-development",
+      "text": "In Progress QA Automation & Testing Platform | Aug 2026 - Present VeriGuard – Hybrid QA Automation & Testing Platform Developing VeriGuard, a scalable QA automation and testing platform designed to manage testing across organizations, projects, and multiple environments from a centralized dashboard. TypeScript Next.js React NestJS PostgreSQL Prisma Redis BullMQ Docker Jest REST APIs AES-256-GCM Platform architecture and capabilities Built with a Next.js dashboard, NestJS API and worker services, PostgreSQL with Prisma, and Redis and BullMQ-based task processing. Supports project and environment management, task lifecycle tracking, cancellation controls, health and readiness monitoring, and automated API integration testing. Uses AES-256-GCM encryption for sensitive credentials with controlled handling of testing environments and configuration data. Designed around modular architecture, automation, security, scalability, reliability, and the safe execution of testing workflows.",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "MailForge – Email Campaign & Tracking Automation Platform",
+      "categories": "professional software-development qa-security",
+      "text": "In Progress Email Campaign Automation Platform | Jun 2026 - Present MailForge – Email Campaign & Tracking Automation Platform MailForge is an email campaign automation and tracking platform designed to manage bulk email delivery, campaign scheduling, recipient management, attachments, and engagement monitoring from a centralized system. Node.js Next.js TypeScript SMTP Database Management Email Tracking Campaign Automation Platform capabilities Supports bulk and scheduled email campaigns with structured, controlled delivery workflows. Provides contact and recipient management with reusable email templates. Includes SMTP configuration, delivery handling, and attachment support. Tracks email opens, link clicks, delivery status, and bounces. Provides campaign reporting and administrative visibility over campaign activity. Focuses on reliability, campaign visibility, and practical handling of high-volume communication workflows.",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "Personal Portfolio Website",
+      "categories": "professional software-development",
+      "text": "Personal Brand Personal Branding | Web Development Personal Portfolio Website A static professional portfolio website built with HTML, CSS, and JavaScript to present my QA, cybersecurity, cloud validation, project work, certifications, and professional experience in a clean responsive layout. HTML CSS JavaScript Responsive Design Portfolio Personal Branding Key features Responsive professional portfolio structure. Project, experience, certification, and recommendation sections. Personal branding aligned with QA and cybersecurity career goals. Visit Portfolio",
+      "links": [
+        "index.html"
+      ],
+      "images": []
+    },
+    {
+      "label": "Defensive Cybersecurity Home Lab",
+      "categories": "security-labs qa-security",
+      "text": "Lab Blue Team Lab | Defensive Security Defensive Cybersecurity Home Lab A controlled home lab simulating enterprise-style endpoints, servers, segmented networks, firewall controls, and monitoring tooling for blue team practice. Home Lab Log Analysis Threat Detection Incident Response Network Segmentation Monitoring Key skills Log analysis and alert review. Threat detection and incident response practice. Network segmentation and defensive monitoring.",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "OWASP-Oriented Web Testing",
+      "categories": "security-labs application-security qa-security",
+      "text": "AppSec Lab Application Security Lab OWASP-Oriented Web Testing Practical web application testing aligned with common OWASP risks, including request manipulation, authentication behavior review, input validation checks, and remediation verification. OWASP Web Security Authentication Testing Request Validation Remediation Verification Key skills Web application security testing. Authentication behavior review. Request manipulation and validation testing. Remediation verification.",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "Cloud Security Experiments",
+      "categories": "security-labs cloud-security qa-security",
+      "text": "Cloud Lab Cloud Security Lab Cloud Security Experiments Cloud-focused learning and experiments covering deployment validation, exposure review, environment checks, and secure service configuration awareness. Cloud Security AWS Deployment Validation Environment Review Secure Configuration Key skills Cloud deployment validation and AWS security awareness. Environment checks and exposure review. Release readiness validation.",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "LetsDefend",
+      "categories": "security-labs qa-security",
+      "text": "SOC SOC Simulation Platform LetsDefend SOC-focused investigation practice covering SIEM alerts, phishing, malware analysis, web attacks, and incident handling workflows. SOC SIEM Alerts Phishing Analysis Malware Analysis Incident Response Web Attacks View Profile",
+      "links": [
+        "https://app.letsdefend.io/user/cybersentinel"
+      ],
+      "images": []
+    },
+    {
+      "label": "TryHackMe",
+      "categories": "security-labs qa-security",
+      "text": "Hands-On Cybersecurity Learning Platform TryHackMe Hands-on rooms and guided security practice supporting defensive security, security operations, and applied investigation skills. Defensive Security SOC Investigation Security Practice Hands-On Labs View Profile",
+      "links": [
+        "https://tryhackme.com/p/cybersentinel01"
+      ],
+      "images": []
+    },
+    {
+      "label": "PicoCTF",
+      "categories": "security-labs application-security",
+      "text": "CTF CTF Practice PicoCTF Capture-the-flag practice focused on web security, cryptography, forensics, reverse engineering, and general cybersecurity problem solving. CTF Web Security Cryptography Forensics Reverse Engineering Problem Solving View Profile",
+      "links": [
+        "https://play.picoctf.org/users/cybersentinel01"
+      ],
+      "images": []
+    },
+    {
+      "label": "Commonwealth Bank Introduction to Cybersecurity",
+      "categories": "virtual-experience qa-security application-security",
+      "text": "Simulation Forage — March 2026 Commonwealth Bank Introduction to Cybersecurity Worked through fraud detection, Splunk dashboard thinking, incident response procedures, security awareness communication, and vulnerability remediation recommendations. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/cybercommomwealth.jpg"
+      ]
+    },
+    {
+      "label": "Datacom Cybersecurity Job Simulation",
+      "categories": "virtual-experience qa-security",
+      "text": "Simulation Forage — March 2026 Datacom Cybersecurity Job Simulation Investigated a simulated cyberattack, completed risk assessment activity, and prepared recommendations to improve a client's cybersecurity posture. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/Datacom Cybersecurity Job Simulation on Forage.jpg"
+      ]
+    },
+    {
+      "label": "Commonwealth Bank Tech Explorer",
+      "categories": "virtual-experience",
+      "text": "Simulation Forage — March 2026 Commonwealth Bank Tech Explorer Practiced requirement gathering, user group identification for secure access, and customer demographic analysis across technology team scenarios. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/Comonwealth.jpg"
+      ]
+    },
+    {
+      "label": "AIG Shields Up",
+      "categories": "virtual-experience application-security",
+      "text": "Simulation Forage — February 2026 AIG Shields Up Researched reported vulnerabilities, reviewed CISA publications, drafted remediation guidance, and applied Python scripting to support ethical security testing. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/aig.jpg"
+      ]
+    },
+    {
+      "label": "Tata Cybersecurity Security Analyst",
+      "categories": "virtual-experience qa-security",
+      "text": "Simulation Forage — February 2026 Tata Cybersecurity Security Analyst Focused on IAM, access control assessment, security strategy alignment, and documentation for technical and non-technical stakeholders. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/Tata.jpg"
+      ]
+    },
+    {
+      "label": "Deloitte Australia Cyber Job Simulation",
+      "categories": "virtual-experience qa-security",
+      "text": "Simulation Forage — February 2026 Deloitte Australia Cyber Job Simulation Analyzed web activity logs, identified suspicious behavior, answered incident-response questions, and assessed indicators of compromise. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/Delloite.jpg"
+      ]
+    },
+    {
+      "label": "Mastercard Cybersecurity Virtual Experience",
+      "categories": "virtual-experience qa-security",
+      "text": "Simulation Forage — January 2026 Mastercard Cybersecurity Virtual Experience Identified and reported phishing threats, analyzed security training needs, and contributed to awareness-focused defense improvements. Preview Certificate ×",
+      "links": [],
+      "images": [
+        "Certificates/Forage.jpg"
+      ]
+    },
+    {
+      "label": "Smart Bus Route Finder",
+      "categories": "software-development academic-projects",
+      "text": "Academic Logic Programming | Prolog Smart Bus Route Finder A Prolog-based path-finding system using BFS, DFS, and A* to calculate routes between cities with validation and scalable rule structure. Prolog BFS DFS A* Path Finding Algorithmic Thinking",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "AI Expert System: Tech Career Advisor",
+      "categories": "software-development academic-projects",
+      "text": "Academic Expert System | Prolog AI Expert System: Tech Career Advisor A rule-based Prolog expert system that evaluates user interests, skills, and certification status to recommend suitable technology career paths. Prolog Rule-Based System Career Recommendation Logic Programming",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "Tic-Tac-Toe Game",
+      "categories": "software-development academic-projects",
+      "text": "Completed Python GUI Project Tic-Tac-Toe Game A two-player Tkinter game with turn logic, win detection, reset functionality, and event-driven interface handling. Python Tkinter GUI Game Logic Event Handling",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "Simple Calculator",
+      "categories": "software-development academic-projects",
+      "text": "Completed Python GUI Project Simple Calculator A Tkinter calculator application with fundamental arithmetic operations, interactive buttons, and responsive display handling. Python Tkinter GUI Arithmetic Event Handling",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "Basic Hospital Appointment System",
+      "categories": "software-development academic-projects",
+      "text": "Academic Java System Project Basic Hospital Appointment System An object-oriented Java system for patient registration, appointment booking, and doctor schedule management through structured backend logic. Java OOP Healthcare Appointment Management Backend Logic",
+      "links": [],
+      "images": []
+    },
+    {
+      "label": "GPA Calculator",
+      "categories": "software-development academic-projects",
+      "text": "CLI Java CLI Project GPA Calculator A command-line GPA calculator tailored to a BSc IT curriculum with subject, credit hour, grade input, validation, and calculation logic. Java CLI Input Validation Calculation Logic Academic Tool",
+      "links": [],
+      "images": []
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Google Cybersecurity Professional Certificate",
+      "categories": "core-cybersecurity",
+      "text": "Featured Core Cybersecurity Google Cybersecurity Professional Certificate Google — Aug 2025 – Jan 2026 Professional cybersecurity learning pathway covering security foundations, risk management, assets, threats, vulnerabilities, detection, response, Linux, SQL, and job preparation. Preview Certificate ×",
+      "popup": "cert-google-cybersecurity",
+      "scan": "Certificates/GoogleCybersecurity.jpg"
+    },
+    {
+      "label": "Junior Cybersecurity Analyst",
+      "categories": "soc-threat-detection core-cybersecurity",
+      "text": "Featured SOC & Cybersecurity Junior Cybersecurity Analyst Cisco Networking Academy — Jan 2025 – Jul 2025 Cybersecurity pathway focused on networking, endpoint security, cyber threat management, network defense, and security operations fundamentals. Preview Certificate ×",
+      "popup": "cert-junior-cybersecurity",
+      "scan": "Certificates/JuniorCybersecurityAnalyst.jpg"
+    },
+    {
+      "label": "Certified Phishing Prevention Specialist (CPPS)",
+      "categories": "core-cybersecurity soc-threat-detection",
+      "text": "Featured Security Awareness / Phishing Defense Certified Phishing Prevention Specialist (CPPS) Hack&Fix Academy — Dec 2025 Credential focused on phishing prevention, awareness, and practical defensive understanding of phishing-related risks. Preview Certificate ×",
+      "popup": "cert-cpps",
+      "scan": "Certificates/CPPS.jpg"
+    },
+    {
+      "label": "Introduction to Software Testing",
+      "categories": "qa-testing programming-development",
+      "text": "Software Testing QA & Software Testing Introduction to Software Testing University of Minnesota — Sep 2026 Foundational software testing concepts supporting test planning, quality assurance, defect identification, and reliable software delivery. Preview Certificate ×",
+      "popup": "cert-introduction-software-testing",
+      "scan": "Certificates/Introduction to Software Testing.jpg"
+    },
+    {
+      "label": "ISO/IEC 27701:2025 Lead Auditor",
+      "categories": "core-cybersecurity",
+      "text": "Lead Auditor Core Cybersecurity ISO/IEC 27701:2025 Lead Auditor Mastermind — Issued Aug 2026 Expires Jul 2029 Privacy information management and audit-focused credential supporting governance, risk, compliance, and security assurance work. Preview Certificate ×",
+      "popup": "cert-iso-27701-lead-auditor",
+      "scan": "Certificates/ISOIEC 277012025 Lead Auditor.jpg"
+    },
+    {
+      "label": "Sound the Alarm: Detection and Response",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Sound the Alarm: Detection and Response Google — Dec 2025 Detection and response concepts for security monitoring and incident handling. Preview Certificate ×",
+      "popup": "cert-sound-alarm",
+      "scan": "Certificates/SoundsAlarm.jpg"
+    },
+    {
+      "label": "Assets, Threats, and Vulnerabilities",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Assets, Threats, and Vulnerabilities Google — Nov 2025 Security risk, asset, threat, and vulnerability concepts for defensive work. Preview Certificate ×",
+      "popup": "cert-assets-threats",
+      "scan": "Certificates/Assets, Threats, and Vulnerabilities.jpg"
+    },
+    {
+      "label": "IT Security: Defense against the Digital Dark Arts",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity IT Security: Defense against the Digital Dark Arts Google — Oct 2025 Security controls, authentication, encryption, and defensive IT practices. Preview Certificate ×",
+      "popup": "cert-it-security",
+      "scan": "Certificates/IT_Security.jpg"
+    },
+    {
+      "label": "Play It Safe: Manage Security Risks",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Play It Safe: Manage Security Risks Google — Sep 2025 Security risk management, policy awareness, and governance foundations. Preview Certificate ×",
+      "popup": "cert-manage-risks",
+      "scan": "Certificates/Managerisk.jpg"
+    },
+    {
+      "label": "Foundations of Cybersecurity",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Foundations of Cybersecurity Google — Aug 2025 Cybersecurity principles, security domains, and entry-level professional context. Preview Certificate ×",
+      "popup": "cert-foundations",
+      "scan": "Certificates/Foundation_Cybersecurity.jpg"
+    },
+    {
+      "label": "Cyber Kill Chains",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Cyber Kill Chains Cybrary — Jul 2025 Attack lifecycle awareness and defensive understanding of adversary stages. Preview Certificate ×",
+      "popup": "cert-kill-chain",
+      "scan": "Certificates/cyberkill.jpg"
+    },
+    {
+      "label": "Introduction to Cryptography",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Introduction to Cryptography Wolfram U — Jul 2025 Cryptography fundamentals supporting secure communication awareness. Preview Certificate ×",
+      "popup": "cert-cryptography",
+      "scan": "Certificates/Intro_cryptography.jpg"
+    },
+    {
+      "label": "Cyber Security Track",
+      "categories": "core-cybersecurity",
+      "text": "Core Core Cybersecurity Cyber Security Track SLASSCOM — Dec 2024 Cybersecurity learning track covering foundational security concepts. Preview Certificate ×",
+      "popup": "cert-cyber-track",
+      "scan": "Certificates/cyber_track.jpg"
+    },
+    {
+      "label": "Security Operations Center (SOC)",
+      "categories": "soc-threat-detection",
+      "text": "SOC SOC & Threat Detection Security Operations Center (SOC) Cisco — Oct 2025 SOC analyst foundations covering monitoring, alerting, and defensive workflows. Preview Certificate ×",
+      "popup": "cert-soc",
+      "scan": "Certificates/socanalyst.jpg"
+    },
+    {
+      "label": "Operationalizing MITRE ATT&CK for SOCs",
+      "categories": "soc-threat-detection",
+      "text": "SOC SOC & Threat Detection Operationalizing MITRE ATT&CK for SOCs Picus Security — Aug 2025 MITRE ATT&CK usage for SOC detection, mapping, and defensive operations. Preview Certificate ×",
+      "popup": "cert-mitre",
+      "scan": "Certificates/operationalizing-mitre-attck-for-socs.jpg"
+    },
+    {
+      "label": "Cyber Threat Management",
+      "categories": "soc-threat-detection",
+      "text": "SOC SOC & Threat Detection Cyber Threat Management Cisco Networking Academy — Jul 2025 Threat management concepts supporting detection and response readiness. Preview Certificate ×",
+      "popup": "cert-threat-management",
+      "scan": "Certificates/cyberthreat.jpg"
+    },
+    {
+      "label": "Endpoint Security",
+      "categories": "soc-threat-detection",
+      "text": "SOC SOC & Threat Detection Endpoint Security Cisco Networking Academy — Jul 2025 Endpoint defense concepts, security controls, and endpoint risk awareness. Preview Certificate ×",
+      "popup": "cert-endpoint",
+      "scan": "Certificates/Endpoint.jpg"
+    },
+    {
+      "label": "Network Defense",
+      "categories": "soc-threat-detection networking-systems",
+      "text": "SOC SOC & Threat Detection Network Defense Cisco Networking Academy — Jul 2025 Network defense concepts supporting traffic analysis and security monitoring. Preview Certificate ×",
+      "popup": "cert-network-defense",
+      "scan": "Certificates/Network_Defence.jpg"
+    },
+    {
+      "label": "Student SOC Program - Foundations",
+      "categories": "soc-threat-detection",
+      "text": "SOC SOC & Threat Detection Student SOC Program - Foundations Microsoft — May 2025 Foundational SOC learning focused on security monitoring and operations. Preview Certificate ×",
+      "popup": "cert-student-soc",
+      "scan": "Certificates/soc.jpg"
+    },
+    {
+      "label": "Intro to Splunk (eLearning)",
+      "categories": "soc-threat-detection networking-systems",
+      "text": "SIEM SOC & Threat Detection Intro to Splunk (eLearning) Splunk — Feb 2026 Introductory Splunk learning supporting SIEM and log analysis exposure. Preview Certificate ×",
+      "popup": "cert-splunk",
+      "scan": "Certificates/Splunk.jpg"
+    },
+    {
+      "label": "Tools of the Trade: Linux and SQL",
+      "categories": "networking-systems",
+      "text": "Systems Networking & Systems Tools of the Trade: Linux and SQL Google — Oct 2025 Linux and SQL foundations supporting security investigation and technical workflows. Preview Certificate ×",
+      "popup": "cert-linux-sql",
+      "scan": "Certificates/Linex&SQL.jpg"
+    },
+    {
+      "label": "Connect & Protect: Network & Network Security",
+      "categories": "networking-systems core-cybersecurity",
+      "text": "Network Networking & Systems Connect & Protect: Network & Network Security Google — Sep 2025 Network fundamentals and network security concepts for defensive practice. Preview Certificate ×",
+      "popup": "cert-connect-protect",
+      "scan": "Certificates/ConnectNetwork.jpg"
+    },
+    {
+      "label": "Networking Devices & Initial Configuration",
+      "categories": "networking-systems",
+      "text": "Network Networking & Systems Networking Devices & Initial Configuration Cisco Networking Academy — Jun 2025 Networking device concepts and initial configuration foundations. Preview Certificate ×",
+      "popup": "cert-network-config",
+      "scan": "Certificates/networkconfig.jpg"
+    },
+    {
+      "label": "Networking Basics",
+      "categories": "networking-systems",
+      "text": "Network Networking & Systems Networking Basics Cisco Networking Academy — May 2025 Core network concepts supporting infrastructure and security fundamentals. Preview Certificate ×",
+      "popup": "cert-networking-basics",
+      "scan": "Certificates/networkbasics.jpg"
+    },
+    {
+      "label": "Computer Hardware Basics",
+      "categories": "networking-systems it-support-professional",
+      "text": "Systems Networking & Systems Computer Hardware Basics Cisco Networking Academy — Oct 2024 Hardware fundamentals supporting troubleshooting and IT support readiness. Preview Certificate ×",
+      "popup": "cert-hardware",
+      "scan": "Certificates/hardware.jpg"
+    },
+    {
+      "label": "Introduction to Linux (LFS101)",
+      "categories": "networking-systems",
+      "text": "Linux Networking & Systems Introduction to Linux (LFS101) The Linux Foundation — Dec 2024 Linux command-line and operating system fundamentals for technical operations. Preview Certificate ×",
+      "popup": "cert-linux",
+      "scan": "Certificates/Intro_Linux.jpg"
+    },
+    {
+      "label": "CS401: Operating Systems",
+      "categories": "networking-systems",
+      "text": "Systems Networking & Systems CS401: Operating Systems Saylor Academy — Dec 2024 Operating system concepts that support systems understanding and troubleshooting. Preview Certificate ×",
+      "popup": "cert-operating-systems",
+      "scan": "Certificates/CS401_OS.jpg"
+    },
+    {
+      "label": "System Administration and IT Infrastructure Services",
+      "categories": "networking-systems it-support-professional",
+      "text": "Systems Networking & Systems System Administration and IT Infrastructure Services Google — Feb 2026 System administration and infrastructure services foundations for IT operations. Preview Certificate ×",
+      "popup": "cert-system-admin",
+      "scan": "Certificates/System Admin.jpg"
+    },
+    {
+      "label": "Certified Artificial Intelligence Security & Risk (CAISR)",
+      "categories": "cloud-emerging core-cybersecurity",
+      "text": "AI Security Cloud & Emerging Tech Certified Artificial Intelligence Security & Risk (CAISR) Red Team Leaders — May 2026 AI security and risk credential supporting secure adoption, threat awareness, and risk-focused evaluation of artificial intelligence systems. Preview Certificate ×",
+      "popup": "cert-caisr",
+      "scan": "Certificates/Certified Artificial Intelligence Security & Risk (CAISR).jpg"
+    },
+    {
+      "label": "AI Security Fundamentals",
+      "categories": "cloud-emerging core-cybersecurity",
+      "text": "AI Security Cloud & Emerging Tech AI Security Fundamentals Varonis — Apr 2026 Foundational AI security learning focused on risk awareness, secure AI usage, and protection considerations for modern data environments. Preview Certificate ×",
+      "popup": "cert-ai-security-fundamentals",
+      "scan": "Certificates/AI Security Fundamentals!_Cert.jpg"
+    },
+    {
+      "label": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      "categories": "cloud-emerging",
+      "text": "Cloud Cloud & Emerging Tech Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate Oracle — Aug 2025 Cloud and AI foundations supporting modern infrastructure awareness. Preview Certificate ×",
+      "popup": "cert-oracle-ai",
+      "scan": "Certificates/oracle.jpg"
+    },
+    {
+      "label": "Introduction to CIP",
+      "categories": "cloud-emerging core-cybersecurity",
+      "text": "Critical Infrastructure Cloud & Emerging Tech Introduction to CIP OPSWAT Academy — Mar 2026 Critical infrastructure protection awareness for security and resilience contexts. Preview Certificate ×",
+      "popup": "cert-cip",
+      "scan": "Certificates/introduction_to_cip.png"
+    },
+    {
+      "label": "Accelerate Your Job Search with AI",
+      "categories": "cloud-emerging it-support-professional",
+      "text": "AI Cloud & Emerging Tech Accelerate Your Job Search with AI Google — Jan 2026 AI-assisted professional productivity and job-search readiness concepts. Preview Certificate ×",
+      "popup": "cert-ai-job-search",
+      "scan": "Certificates/Accelerate Your Job Search with AI.jpg"
+    },
+    {
+      "label": "Mental Health in Cybersecurity",
+      "categories": "cloud-emerging it-support-professional",
+      "text": "Professional Cloud & Emerging Tech Mental Health in Cybersecurity Security Blue Team — May 2025 Professional resilience and wellbeing awareness for cybersecurity environments. Preview Certificate ×",
+      "popup": "cert-mental-health",
+      "scan": "Certificates/Mental_Health.jpg"
+    },
+    {
+      "label": "Automate Cybersecurity Tasks with Python",
+      "categories": "programming-development core-cybersecurity",
+      "text": "Automation Programming & Development Automate Cybersecurity Tasks with Python Google — Jan 2026 Python automation concepts for practical cybersecurity workflows. Preview Certificate ×",
+      "popup": "cert-automate-python",
+      "scan": "Certificates/AutomateTasks.jpg"
+    },
+    {
+      "label": "Python Programming",
+      "categories": "programming-development",
+      "text": "Python Programming & Development Python Programming GeeksForGeeks — Dec 2025 Programming foundations supporting scripting and technical problem solving. Preview Certificate ×",
+      "popup": "cert-python-gfg",
+      "scan": "Certificates/Python GFG.jpg"
+    },
+    {
+      "label": "Full Stack Development (HTML, CSS, Java, JavaScript)",
+      "categories": "programming-development",
+      "text": "Development Programming & Development Full Stack Development (HTML, CSS, Java, JavaScript) Udemy — Mar 2025 Web development foundations across front-end and programming concepts. Preview Certificate ×",
+      "popup": "cert-full-stack",
+      "scan": "Certificates/FullStack.jpg"
+    },
+    {
+      "label": "The Git & GitHub Bootcamp",
+      "categories": "programming-development it-support-professional",
+      "text": "Version Control Programming & Development The Git & GitHub Bootcamp Udemy — Sep 2024 Version control foundations supporting collaboration and secure delivery. Preview Certificate ×",
+      "popup": "cert-git-github",
+      "scan": "Certificates/GitHub.jpg"
+    },
+    {
+      "label": "Java Programming",
+      "categories": "programming-development",
+      "text": "Java Programming & Development Java Programming Programming Hero — May 2024 Java fundamentals supporting object-oriented programming and backend logic. Preview Certificate ×",
+      "popup": "cert-java",
+      "scan": "Certificates/java_fundamental.jpg"
+    },
+    {
+      "label": "User Experience Design - Learn UI/UX with Figma",
+      "categories": "programming-development it-support-professional",
+      "text": "UX Programming & Development User Experience Design - Learn UI/UX with Figma Udemy — Sep 2025 UI/UX foundations supporting user-focused product and interface thinking. Preview Certificate ×",
+      "popup": "cert-uiux",
+      "scan": "Certificates/UIUX_Design.jpg"
+    },
+    {
+      "label": "Technical Support Fundamentals",
+      "categories": "it-support-professional networking-systems",
+      "text": "IT Support IT Support & Professional Skills Technical Support Fundamentals Google / Coursera — Jun 2024 Technical support foundations covering troubleshooting, customer support, and IT basics. Preview Certificate ×",
+      "popup": "cert-technical-support",
+      "scan": "Certificates/Tecgnical_support.jpg"
+    },
+    {
+      "label": "Practical Help Desk",
+      "categories": "it-support-professional",
+      "text": "Help Desk IT Support & Professional Skills Practical Help Desk TCM Security — Jan 2025 Practical help desk knowledge supporting user support and escalation workflows. Preview Certificate ×",
+      "popup": "cert-help-desk",
+      "scan": "Certificates/practical-help-desk.jpg"
+    },
+    {
+      "label": "Put It to Work: Prepare for Cybersecurity Jobs",
+      "categories": "it-support-professional core-cybersecurity",
+      "text": "Career IT Support & Professional Skills Put It to Work: Prepare for Cybersecurity Jobs Google — Jan 2026 Job readiness and professional preparation for cybersecurity roles. Preview Certificate ×",
+      "popup": "cert-put-it-work",
+      "scan": "Certificates/Put It to Work.jpg"
+    },
+    {
+      "label": "Accelerate Your Job Search with AI",
+      "categories": "it-support-professional cloud-emerging",
+      "text": "Career IT Support & Professional Skills Accelerate Your Job Search with AI Google — Jan 2026 Professional development credential focused on AI-supported career readiness. Preview Certificate ×",
+      "popup": "cert-ai-job-search-pro",
+      "scan": "Certificates/Accelerate Your Job Search with AI.jpg"
+    }
+  ],
+  "recommendations": [
+    {
+      "label": "Mr. Hemal Tharaka Eranga",
+      "quote": "“Rimsan has supported web and mobile QA testing, cybersecurity checks, system security verification, and development support at SAĜO. He is hardworking, responsible, and eager to learn, with strong potential to grow in QA, cybersecurity, and development.”",
+      "attribution": "HT Mr. Hemal Tharaka Eranga DevOps Engineer SAĜO MENTE INTERNATIONAL SDN. BHD."
+    },
+    {
+      "label": "Mr. Nimesh Piyumantha",
+      "quote": "“I had the pleasure of working with Rimsan at SAĜO. He is a responsible, dedicated, and supportive team member with strong attention to detail, particularly in QA and security. His willingness to learn and collaborate makes him a valuable addition to any team. I highly recommend him for his professionalism and commitment.”",
+      "attribution": "NP Mr. Nimesh Piyumantha Project Lead SAĜO MENTE INTERNATIONAL SDN. BHD."
+    },
+    {
+      "label": "Mr. Gayeshan Mithige",
+      "quote": "“Rimsan’s strong communication skills, professionalism, reliability, and friendly approach make him a highly valued and dependable member of our team.”",
+      "attribution": "GM Mr. Gayeshan Mithige Managing Director Tech Bridge Solutions Ltd"
+    },
+    {
+      "label": "Ms. Amani Zulfi",
+      "quote": "“Rimsan's a dedicated and hardworking person who always shows great enthusiasm for learning, and teamwork.”",
+      "attribution": "AZ Ms. Amani Zulfi Intern - UX/UI Designer FAITE PVT LTD"
+    },
+    {
+      "label": "Mr. K. Ahamed Ammar",
+      "quote": "“Rimsan consistently demonstrates professionalism, integrity, and a collaborative spirit—qualities that make him an asset to any team.”",
+      "attribution": "AA Mr. K. Ahamed Ammar Managing Director Bilaal Kidz"
+    },
+    {
+      "label": "Dr. MH. Mohamed Sabir",
+      "quote": "“Rimsan’s diligence, helpful nature, and outstanding contributions have made him a highly valued and respected member of our team.”",
+      "attribution": "MS Dr. MH. Mohamed Sabir Managing Director Care & Cure Medical Center"
+    }
+  ],
+  "links": {
+    "index.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "projects.html",
+      "Resume/AR-Mohamed-Rimsan-Resume.pdf",
+      "contact.html",
+      "https://github.com/mohamedrimsan",
+      "experience.html",
+      "projects.html",
+      "certifications.html"
+    ],
+    "about.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html"
+    ],
+    "experience.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "projects.html",
+      "certifications.html",
+      "contact.html"
+    ],
+    "projects.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "experience.html",
+      "https://assurex-eight.vercel.app",
+      "index.html",
+      "https://app.letsdefend.io/user/cybersentinel",
+      "https://tryhackme.com/p/cybersentinel01",
+      "https://play.picoctf.org/users/cybersentinel01",
+      "https://app.letsdefend.io/my-rewards/detail/3f78042e-bdad-4fb8-a1cb-d05fcabaec2d",
+      "https://app.letsdefend.io/my-rewards/detail/4c45ad6a-c7c6-4d3f-918b-e86b604d0f0f",
+      "https://app.letsdefend.io/my-rewards/detail/472d824a7f7e4c44a46fbc15edf75457",
+      "https://app.letsdefend.io/my-rewards/detail/fd0ab1fe-81cc-49a9-b599-1cc7dd4a751f",
+      "https://app.letsdefend.io/my-rewards/detail/2a20f2a9-39a4-4e27-ac3f-3bc631a463d1",
+      "https://app.letsdefend.io/my-rewards/detail/0fa9f702-aadd-4535-b970-5b50c30e5559",
+      "https://app.letsdefend.io/my-rewards/detail/dd03b799-186f-4552-b3e1-c489ca21a61c",
+      "https://app.letsdefend.io/my-rewards/detail/f6f51586-c9ef-4855-8fc1-ea60d6d5b8e7",
+      "https://app.letsdefend.io/my-rewards/detail/464f873b-aec9-459f-b938-d1cdc102004d",
+      "experience.html",
+      "certifications.html",
+      "contact.html"
+    ],
+    "skills.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "projects.html",
+      "experience.html",
+      "contact.html"
+    ],
+    "certifications.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "skills.html",
+      "projects.html",
+      "experience.html"
+    ],
+    "recommendations.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "https://www.linkedin.com/in/nimesh-piyumantha/",
+      "experience.html",
+      "projects.html",
+      "contact.html",
+      "https://www.linkedin.com/in/mohamed-rimsan-a-r"
+    ],
+    "contact.html": [
+      "#main-content",
+      "index.html",
+      "about.html",
+      "experience.html",
+      "projects.html",
+      "skills.html",
+      "certifications.html",
+      "recommendations.html",
+      "contact.html",
+      "https://www.linkedin.com/in/mohamed-rimsan-a-r",
+      "mailto:mohamed.rimsan.ar@gmail.com",
+      "https://github.com/mohamedrimsan",
+      "https://mohamedrimsan.github.io",
+      "https://wa.me/94774047471",
+      "experience.html",
+      "projects.html",
+      "Resume/AR-Mohamed-Rimsan-Resume.pdf",
+      "https://www.linkedin.com/in/mohamed-rimsan-a-r"
+    ]
+  },
+  "assets": {
+    "Background_dark.jpg": "c9dd0ac2b883f06068d4a953dc3781a2b7ad2571cc9c2bdd4b8fdceeea036b59",
+    "Background_light.jpg": "6584a72ef5109fa929e54c7e57b767abe3fe19d5f0c3a3d5999b1a067f05012c",
+    "Badges/29729252200878.png": "1479d8688a4749693642aff2e9097f29058c577fc73021cb8b548e335b5c8c01",
+    "Badges/AI Security Fundamentals_Badge.png": "6c8ef502f5c9ffabfd51e7ec7e546515ca80654c7da1e471e177d49cc13877ae",
+    "Badges/CPPS.jpg": "6f4b47c1d306bf91b3b805f9552f0c130d1c13fe6d6a05d7c3a162692381bdcc",
+    "Badges/First Blood.png": "9a4ca63472aa77e95069986286870638a3fe632a520da0c7e5a749ab14d035dc",
+    "Badges/Incident Handler - 2.png": "a4bc9ed7026b87cd07b9d2b6391012f93fedde633a1de2da403742b25669d1b3",
+    "Badges/Incident Handler.png": "f7ee2c6cbed0297c1da8b198697dc0e8ab9bd49159264f887ada5a5b891db95a",
+    "Badges/Malware Analyzer.png": "3a8ad5375896b649613028a1cec3954ac7fb3389c4764dd59e99464a913e4b27",
+    "Badges/OCI25AICFAV1.png": "a3a924a39022b36c9803e2be60b481e5fa8fb221598b2e10e5902f3de3fe54d2",
+    "Badges/Phishing Expert.png": "2eb71d36ecaa4665fa6a41c106c1d7721d6ec3c72d8cafaeb52970ad9961dcba",
+    "Badges/SIEM.png": "a3a27e73ce0891e42d607fec306ec70c0782f512268c258034bbeb6b8a116679",
+    "Badges/SOC Member.png": "88c1b81d166cfd5fc789e371930fc1d32ffa665ea4f778f19ded75fd909ec9a6",
+    "Badges/Web Attack Investigated.png": "7d1ba55af1137dcf9079e5f26748408a527f7d994dcf23a6455a2fd616de3c28",
+    "Badges/Web Attack Investigator.png": "e8fbb6785c8e29bb07f4d2d969f964323b528792c29894390ab753cb08fec48f",
+    "Badges/computer-hardware-basics.png": "c7573125878994578f825735007b8d0521c35242ef7bb8ed15838ab0eadc79f0",
+    "Badges/cyber-threat-management.png": "8218ef31ba8dfc7dc59d1848d18441a44c1b98db102e0dc35a83bc819dfd307c",
+    "Badges/endpoint-security.png": "a946d2cc0f07c6185036463a5b9a994fb3a2b0f647af80d37978ed42ed809efd",
+    "Badges/english-for-it-1.png": "2406c58f6fe7e0e4f55a1ffe58a9c9c0267a04610239a8c1d449ba9071e6c055",
+    "Badges/google-cybersecurity-professional-certificate-v-2 (1).png": "d21fa638af8992060d5f629134360a9d1dac90c5c85296b25a38cbf3f43120b5",
+    "Badges/isc2-candidate.png": "25f76799582e2b97ff36bdf044798157ae36f820f5cd4b34d8b60965f055f7bf",
+    "Badges/iso-iec-27701-2025-lead-auditor.png": "4a27bf1611dbf87cae9e3c68cf34821e7835d2812063899d0fe4e03e6499e0b7",
+    "Badges/junior-cybersecurity-analyst-career-path.1.png": "3113bd296a0e0cb9bec12d2f3561690db31b1b93e36b689d7c0bae68d333ed7f",
+    "Badges/lfs101-introduction-to-linux.png": "aa13d7e419821fe12505546bfb39b393645ac93584b3a34339ec8990429fd269",
+    "Badges/network-defense.png": "fc93af364de61f9782f89a1bb8a5c3144d005487982b27c26f88713dfc905b16",
+    "Badges/networking-basics.png": "dc1250bba5c490cdd2bf1f29b70f1e6dce1c25b7a21e4b19c1dbb78344d0fbce",
+    "Badges/networking-devices-and-initial-configuration.png": "f5c8c749b28573e13cd3dc8d219eefd8e094c09736d3c70d84ed8aff89a590f0",
+    "Badges/operating-systems-basics.png": "0e18cba8b614ed341b2a15fd81f56109802b95fbc24ba98e7965386ab6d70e36",
+    "Badges/opswat-introduction-to-critical-infrastructure-protection-icip.png": "f8e2254a2791b86e0d216586f4f4fcec0d2485951bfc70ec593ee3dcf0df8c51",
+    "Certificates/AI Security Fundamentals!_Cert.jpg": "73ef59a9ae334747e432bf5661609413353f60d58da990f5f33df3732d692204",
+    "Certificates/Accelerate Your Job Search with AI.jpg": "b74880566180669aac8e052cadd30a2c7206115d13f2613123b54e445dccc9a4",
+    "Certificates/Assets, Threats, and Vulnerabilities.jpg": "8aa4faaf5db68c0552c6b1c13c0be644ad31b01f1b2bc984ef60c04f6730cf18",
+    "Certificates/AutomateTasks.jpg": "90f7f21fcfc9150ee8cebff79c8fda5b5527006f1832e698d0bd1cb9a515901b",
+    "Certificates/CPPS.jpg": "10eccf406f3194901d35772c44a2d88688c177279a5b91f86f1613f8300e6ebe",
+    "Certificates/CS401_OS.jpg": "2d1d938eb0ca507a0d77b4a91061242da55bff471cf7d1fc2746a6a8ab5f69b6",
+    "Certificates/Certified Artificial Intelligence Security & Risk (CAISR).jpg": "7c8f311eec15f11487979df978f54fb55c48147407a12967bd95d587a7ad67e1",
+    "Certificates/Comonwealth.jpg": "3473f21f266e02590446270df2b840d77db0804181452e9bbd666b26675242c2",
+    "Certificates/ConnectNetwork.jpg": "e697577fadb575a1c8c258d646cd6923f84e479e3f948aaa966bee3df12fac35",
+    "Certificates/Datacom Cybersecurity Job Simulation on Forage.jpg": "f34cc3a27b89a702f2faea24fffa4c7a66a108fc3f3ce6c9737c0ac1fcf01d9c",
+    "Certificates/Delloite.jpg": "12233246e9cf66fa70b2d34298ffe848fa8bb9fe629a70f24e404ab83dfb9d10",
+    "Certificates/Endpoint.jpg": "4c727dc4be60c20f412e9fbacb99f726ee39b784bcce8a8fdbcfd6f2f2f416aa",
+    "Certificates/Forage.jpg": "f29dedd29a832b972d0788d6a0112a16acee661d2d7816f551556df6db5d3cbf",
+    "Certificates/Foundation_Cybersecurity.jpg": "dea92d19c849606f3f9ff8c7c2ccc1c28222729186c96f17a9f12b98cf46fb63",
+    "Certificates/FullStack.jpg": "79c3b29b973491ec4d8cd40bce259d48c2a9da927005b8bdf5b5d674e5868de1",
+    "Certificates/GitHub.jpg": "a0ee834fa456267f223b5dd5c7771236b4a8183a8f6f4b2777349ad9e8ed3bc0",
+    "Certificates/GoogleCybersecurity.jpg": "7565c088eb4e26085da1f2efbb634f0de6b4976aec1aecdc52f729665ebfbd6f",
+    "Certificates/ISOIEC 277012025 Lead Auditor.jpg": "50fb14addc9a9e4ceae3e546c9cf1fb21f684bcb7d0b02520ca7e9a5783986dd",
+    "Certificates/IT_Security.jpg": "a1ca902515b009b36cbd0455fe97e5850919bd291c7798374240a872c07eabd9",
+    "Certificates/Intro_Linux.jpg": "2bf4da1696f9606941e604825d7a849ba87d430d4edb275a104f872b7ba94689",
+    "Certificates/Intro_cryptography.jpg": "cae16b528f359546d639d38ec22524a1026100a5d7a9463589bab31e43b949a1",
+    "Certificates/Introduction to Software Testing.jpg": "fb888b30263c851e55a6a030365177c74d2a77b695fa5ebefd2e4addaf5bdd0e",
+    "Certificates/JuniorCybersecurityAnalyst.jpg": "14507ac6bff4ef7014b3489b1f0a2987a0571ae6652548f539ffb2bcc4e1d855",
+    "Certificates/Linex&SQL.jpg": "5de0b2046c236d6f6545687a01d6f8a4523a226922007c897a1fa16c3a1d396d",
+    "Certificates/Managerisk.jpg": "48385865107dc70e1fe129ec14fab5563b3b8392278a49c59081ea0e6e290776",
+    "Certificates/Mental_Health.jpg": "9d29672e859e475dc947c7a1e614a44c28a0c3905429f1559b7f7f35fecc424e",
+    "Certificates/Network_Defence.jpg": "5bfe8ff0991e1487cbf81a507b2d04a449a153c58550b9cf46b5aa61b87cc2d9",
+    "Certificates/Put It to Work.jpg": "e41675ac42624d604134c4a043d46a51965865258bf95cb61f03526a88d35bc3",
+    "Certificates/Python GFG.jpg": "28c4141192fe7977eeb643f84a1e0f4f266cde05476672c93323c6143e92eb08",
+    "Certificates/SoundsAlarm.jpg": "31c45b8c312ad89547236e5590f6d354dde91ea8e8185e87cec69d679121f90c",
+    "Certificates/Splunk.jpg": "f07ecbb65e15bdad26d13962fcb1277a7988db501c2b806b42740f391461091d",
+    "Certificates/System Admin.jpg": "d86ac4bb08a6c4283a73908b275f72c3dcf2fd9990367a1563d0a1673dc1a79b",
+    "Certificates/Tata.jpg": "ad796d58ffbece103faf5c2532523bc535e67eb633733896432006003df7b53d",
+    "Certificates/Tecgnical_support.jpg": "938af7a510013b49179049ad931fe8b4f193aac9b3a18d7035388ac72e1f5df9",
+    "Certificates/UIUX_Design.jpg": "9a29d541d5db901fb5c6c600ca4c244323a81125acdb9c542f9b4acdb57c03fa",
+    "Certificates/aig.jpg": "83566467237df4fa6ec4a8fb6c3c28501bc029718e019c8bf098680ec6b33a70",
+    "Certificates/cyber_track.jpg": "5e327f6efd1c0927ef0b3966370a234f2beed3eecbe829398f9bd0c028363824",
+    "Certificates/cybercommomwealth.jpg": "064b5f9a9bbdc64b114cd8d76c244086e31df6107c43d4029beb16c6f939a49e",
+    "Certificates/cyberkill.jpg": "618574d21b9a4b8e66d1c528efd63b426fb1af117cb28feb98f5a4518d8a4129",
+    "Certificates/cyberthreat.jpg": "5d60ecf16962e9113fe4da5e19771a996224f67ac63f29f7976b9802d6011dc7",
+    "Certificates/hardware.jpg": "86c7004993d5fa138d1b0d2d38e40c3ab76e02b409f8109477c571ca97dbf94e",
+    "Certificates/introduction_to_cip.png": "d64ba6a9c45d1ac63f7004b65872e399acd2cc1b5c6ecc2f2f7cf51a758c210e",
+    "Certificates/java_fundamental.jpg": "4bd44f950716c40326bc5d5561b5977b57644570d16df7f55b4240a39c633e5f",
+    "Certificates/networkbasics.jpg": "558bf250cbf10bc9f694922233f370ea16a16625515a64549cf39bed4457b45d",
+    "Certificates/networkconfig.jpg": "91de58427c5f280b99b1330f4a122aac0d53b3613ddde2c0114e20ce6b4fd052",
+    "Certificates/operationalizing-mitre-attck-for-socs.jpg": "ca85a67cb9c655effecf73ed181ffd6e27e28437b6ca5ab1e4427c16e6c20e1a",
+    "Certificates/oracle.jpg": "434933c8b8e50a472f93cff8c53be6574e064b6b71416e453af3a88ecebd1a1c",
+    "Certificates/practical-help-desk.jpg": "417cc0d259991ef612b5291afc486f1f01d7177e1f1fdc05dab63a459c4e8313",
+    "Certificates/soc.jpg": "35e4c162ece3d21bc0b0e0ad7631688563906c869280853538fbf85aaef4494c",
+    "Certificates/socanalyst.jpg": "f4a59285001fcf1786525c581d31cb090c6bfe82d5f6f47216dc523f86877eef",
+    "Images/avatar.jpg": "48c1913f1e017ba68db538b283d1ea104fbef5023cb13efe50e511db40d2fe25",
+    "Images/business-person-futuristic-business-environment.jpg": "0f057c9cd65acfe60e3c334022f995f7aec1b9d19173885b50730fc4fd656324",
+    "Images/discord-icon.png": "5ef974fbb6d45c64d592eca9a09f3015535c21bc33ca1dc167a2f5b9db4c0571",
+    "Images/github-icon.png": "d2ebcc2a0ac713aee914e99139503d42bac66bf37833587b1980b8c3015e7218",
+    "Images/gmail-icon.png": "6497f8773793e092f2f92277c14b382fb66251e2a6a7e00aad0e65a152459790",
+    "Images/letsdefend-icon.png": "5f8e75af5f338473b8841408667a8b68c31c999afca77d887f1607021ee06b85",
+    "Images/linkedin-icon.png": "614a783864fa3f43ef1fac3eeaa53c55f525f813bbd6f5709f115de11521cc97",
+    "Images/picoctf-icon.png": "56b45e9b691e56a0bb4c8f03aa7aab3a93132d5fcde60656b9b1e1ba77fffde9",
+    "Images/tryhackme-icon.png": "6b8f24fd74c44fd13f01d011b8795e2a17982db63b5b31019cfe0bc79d78b9d5",
+    "Images/whatsapp-icon.png": "e4e23ecfefd96a0760f6294bbe8c1895bb1fe92729a266e729cf8455f7f93def",
+    "Resume/AR-Mohamed-Rimsan-Resume.pdf": "940f279145b0f88a143349c43ccc948aff13b126a8379c95d7244c70db9b130a",
+    "Resume/generate_resume.py": "0c512fc6e2108e8d4f157a364979a767f8692e2ce4fd1aaf0a2633ac22ae7ee0",
+    "googlec5a2878c58ee90d7.html": "dcf8aa19c7ccabcec5709005bf12fa2a1acc6f52a9ef1b7f44ac57d21703a1fb",
+    "robots.txt": "c59a09b7f2d3c54fea29dbf539f15f55e1cb4666ae1dedf4c77b22cb4daebef1"
+  }
+}

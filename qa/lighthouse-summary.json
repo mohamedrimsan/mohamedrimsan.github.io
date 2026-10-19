@@ -1,0 +1,126 @@
+[
+  {
+    "page": "index.html",
+    "lighthouse_version": "12.8.2",
+    "form_factor": "mobile",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 82,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 2394.4010000000003,
+        "display": "2.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2886.679,
+        "display": "2.9 s"
+      },
+      "total-blocking-time": {
+        "value": 70,
+        "display": "70 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      }
+    },
+    "runtime_error": null,
+    "environment_injected_requests": 6
+  },
+  {
+    "page": "projects.html",
+    "lighthouse_version": "12.8.2",
+    "form_factor": "mobile",
+    "scores": {
+      "performance": 80,
+      "accessibility": 100,
+      "best-practices": 82,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 2996.2550260462117,
+        "display": "3.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3314.2712608225515,
+        "display": "3.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.07937556306082744,
+        "display": "0.079"
+      }
+    },
+    "runtime_error": null,
+    "environment_injected_requests": 6
+  },
+  {
+    "page": "certifications.html",
+    "lighthouse_version": "12.8.2",
+    "form_factor": "mobile",
+    "scores": {
+      "performance": 76,
+      "accessibility": 100,
+      "best-practices": 82,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 3231.5204999999996,
+        "display": "3.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3605.2185,
+        "display": "3.6 s"
+      },
+      "total-blocking-time": {
+        "value": 52,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.10227330880692537,
+        "display": "0.102"
+      }
+    },
+    "runtime_error": null,
+    "environment_injected_requests": 7
+  },
+  {
+    "page": "contact.html",
+    "lighthouse_version": "12.8.2",
+    "form_factor": "mobile",
+    "scores": {
+      "performance": 76,
+      "accessibility": 100,
+      "best-practices": 82,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 3638.7307499999997,
+        "display": "3.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3952.3916500000005,
+        "display": "4.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      }
+    },
+    "runtime_error": null,
+    "environment_injected_requests": 22
+  }
+]
