@@ -1,0 +1,74 @@
+[
+  {
+    "theme": "dark",
+    "foreground": "#edf2fa",
+    "background": "#080d17",
+    "ratio": 17.29
+  },
+  {
+    "theme": "dark",
+    "foreground": "#edf2fa",
+    "background": "#101a29",
+    "ratio": 15.55
+  },
+  {
+    "theme": "dark",
+    "foreground": "#edf2fa",
+    "background": "#132235",
+    "ratio": 14.28
+  },
+  {
+    "theme": "dark",
+    "foreground": "#edf2fa",
+    "background": "#173b40",
+    "ratio": 10.76
+  },
+  {
+    "theme": "dark",
+    "foreground": "#a9b8cd",
+    "background": "#080d17",
+    "ratio": 9.65
+  },
+  {
+    "theme": "dark",
+    "foreground": "#a9b8cd",
+    "background": "#101a29",
+    "ratio": 8.67
+  },
+  {
+    "theme": "dark",
+    "foreground": "#a9b8cd",
+    "background": "#132235",
+    "ratio": 7.97
+  },
+  {
+    "theme": "dark",
+    "foreground": "#a9b8cd",
+    "background": "#173b40",
+    "ratio": 6.0
+  },
+  {
+    "theme": "dark",
+    "foreground": "#8be0d4",
+    "background": "#080d17",
+    "ratio": 12.69
+  },
+  {
+    "theme": "dark",
+    "foreground": "#8be0d4",
+    "background": "#101a29",
+    "ratio": 11.41
+  },
+  {
+    "theme": "dark",
+    "foreground": "#8be0d4",
+    "background": "#132235",
+    "ratio": 10.48
+  },
+  {
+    "theme": "dark",
+    "foreground": "#8be0d4",
+    "background": "#173b40",
+    "ratio": 7.9
+  }
+]

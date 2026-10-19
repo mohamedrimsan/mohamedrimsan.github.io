@@ -1,195 +1,176 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const nav = document.querySelector('nav');
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = [...document.querySelectorAll('nav a')];
-  const typedText = document.getElementById('typed-text');
-  const phrases = [
-    'Cybersecurity Professional',
-    'QA & Security Engineer',
-    'Application Security',
-    'Vulnerability Management',
-    'Cloud Security',
-    'Governance, Risk & Compliance',
-  ];
-
-  const closeNav = () => {
-    nav?.classList.remove('show');
-    hamburger?.setAttribute('aria-expanded', 'false');
-  };
-
-  const closePopups = () => {
-    document.querySelectorAll('.popup.active').forEach((popup) => popup.classList.remove('active'));
-    document.body.classList.remove('modal-open');
-  };
-
-  document.querySelectorAll('.popup').forEach((popup) => {
-    if (popup.parentElement !== document.body) document.body.appendChild(popup);
-  });
-
-  if (hamburger && nav) {
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('show');
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-    });
-  }
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeNav();
-      closePopups();
-    }
-  });
-
-  const current = location.pathname.split('/').pop() || 'index.html';
-  navLinks.forEach((link) => {
-    if (link.getAttribute('href') === current) link.classList.add('active');
-    link.addEventListener('click', closeNav);
-  });
-
-  if (typedText) {
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    const type = () => {
-      const phrase = phrases[phraseIndex];
-      typedText.textContent = isDeleting ? phrase.slice(0, charIndex--) : phrase.slice(0, charIndex++);
-      let delay = isDeleting ? 45 : 95;
-
-      if (!isDeleting && charIndex === phrase.length + 1) {
-        isDeleting = true;
-        delay = 1200;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        delay = 350;
-      }
-
-      setTimeout(type, delay);
+/* Progressive enhancements: pages and evidence links also work without JavaScript. */
+(() => {
+  const root = document.documentElement;
+  root.dataset.theme = 'dark';
+  document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('primary-navigation');
+    const menu = document.querySelector('.hamburger');
+    const compact = matchMedia('(max-width: 1199px)');
+    const setMenu = (open, restore = false) => {
+      if (!nav || !menu) return;
+      nav.classList.toggle('show', open);
+      menu.setAttribute('aria-expanded', String(open));
+      if (restore) menu.focus();
     };
+    if (nav && menu) {
+      menu.hidden = false;
+      menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+      nav.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+      document.addEventListener('click', event => {
+        if (!nav.contains(event.target) && !menu.contains(event.target)) setMenu(false);
+      });
+      document.addEventListener('focusin', event => {
+        if (compact.matches && !nav.contains(event.target) && !menu.contains(event.target)) setMenu(false);
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') setMenu(false, true);
+      });
+      compact.addEventListener('change', () => {
+        const focusedLink = nav.contains(document.activeElement);
+        setMenu(false, compact.matches && focusedLink);
+      });
+      root.classList.add('nav-ready');
+    }
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
 
-    setTimeout(type, 500);
-  }
-
-  const certSearch = document.querySelector('input[data-cert-search]');
-  let activeFilter = document.querySelector('[data-filter].active')?.getAttribute('data-filter') || 'all';
-
-  const applyFilters = () => {
-    const query = certSearch?.value.trim().toLowerCase() || '';
-
-    document.querySelectorAll('[data-cert-category]').forEach((card) => {
-      const categories = card.getAttribute('data-cert-category')?.split(' ') || [];
-      const searchableText = `${card.getAttribute('data-cert-search') || ''} ${card.textContent || ''}`.toLowerCase();
-      const matchesFilter = activeFilter === 'all' || categories.includes(activeFilter);
-      const matchesSearch = !query || searchableText.includes(query);
-      card.hidden = !(matchesFilter && matchesSearch);
+    const tiltPanels = [...document.querySelectorAll('[data-tilt]')];
+    const pointer = matchMedia('(hover: hover) and (pointer: fine)');
+    const resetTilt = () => tiltPanels.forEach(panel => {
+      panel.style.removeProperty('--tilt-x');
+      panel.style.removeProperty('--tilt-y');
     });
-
-    document.querySelectorAll('[data-project-category]').forEach((item) => {
-      const categories = item.getAttribute('data-project-category')?.split(' ') || [];
-      item.hidden = activeFilter !== 'all' && !categories.includes(activeFilter);
-    });
-
-    document.querySelectorAll('[data-cert-section]').forEach((section) => {
-      const items = [...section.querySelectorAll('[data-cert-category]')];
-      section.hidden = items.length > 0 && items.every((item) => item.hidden);
-    });
-
-    document.querySelectorAll('[data-project-section]').forEach((section) => {
-      const items = [...section.querySelectorAll('[data-project-category]')];
-      section.hidden = activeFilter !== 'all' && items.length > 0 && items.every((item) => item.hidden);
-    });
-  };
-
-  document.querySelectorAll('[data-filter]').forEach((button) => {
-    button.addEventListener('click', () => {
-      activeFilter = button.getAttribute('data-filter') || 'all';
-      document.querySelectorAll('[data-filter]').forEach((chip) => chip.classList.remove('active'));
-      button.classList.add('active');
-      applyFilters();
-    });
-  });
-
-  certSearch?.addEventListener('input', applyFilters);
-  applyFilters();
-
-  document.querySelectorAll('.cert-preview[data-popup]').forEach((trigger) => {
-    trigger.addEventListener('click', () => {
-      const popup = document.getElementById(trigger.getAttribute('data-popup'));
-      if (!popup) return;
-      closePopups();
-      popup.classList.add('active');
-      document.body.classList.add('modal-open');
-    });
-  });
-
-  document.querySelectorAll('.popup').forEach((popup) => {
-    popup.addEventListener('click', (event) => {
-      if (event.target === popup || event.target.classList.contains('close')) closePopups();
-    });
-  });
-
-  document.querySelectorAll('[data-copy]').forEach((button) => {
-    const originalHtml = button.innerHTML;
-    button.addEventListener('click', async () => {
-      const value = button.getAttribute('data-copy') || '';
-      try {
-        if (navigator.clipboard?.writeText) {
-          await navigator.clipboard.writeText(value);
-        } else {
-          const textarea = document.createElement('textarea');
-          textarea.value = value;
-          textarea.setAttribute('readonly', '');
-          textarea.style.position = 'fixed';
-          textarea.style.left = '-9999px';
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          textarea.remove();
-        }
-        button.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Copied';
-        setTimeout(() => {
-          button.innerHTML = originalHtml;
-        }, 1800);
-      } catch {
-        button.innerHTML = '<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Copy failed';
-        setTimeout(() => {
-          button.innerHTML = originalHtml;
-        }, 1800);
-      }
-    });
-  });
-
-  document.querySelectorAll('[data-contact-form]').forEach((form) => {
-    const status = form.querySelector('[data-form-status]');
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      if (!status) return form.submit();
-
-      const submitButton = form.querySelector('button[type="submit"]');
-      status.className = 'form-status';
-      status.textContent = 'Sending your message...';
-      submitButton?.setAttribute('disabled', 'true');
-
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' },
+    if (tiltPanels.length) {
+      root.classList.add('motion-ready');
+      motion.addEventListener('change', resetTilt);
+      pointer.addEventListener('change', resetTilt);
+      tiltPanels.forEach(panel => {
+        let frame = 0;
+        panel.addEventListener('pointermove', event => {
+          if (motion.matches || !pointer.matches) return;
+          const rect = panel.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width - .5;
+          const y = (event.clientY - rect.top) / rect.height - .5;
+          cancelAnimationFrame(frame);
+          frame = requestAnimationFrame(() => {
+            if (motion.matches || !pointer.matches) return;
+            panel.style.setProperty('--tilt-x', `${-y * 8}deg`);
+            panel.style.setProperty('--tilt-y', `${x * 10}deg`);
+          });
         });
+        panel.addEventListener('pointerleave', () => { cancelAnimationFrame(frame); resetTilt(); });
+      });
+    }
 
-        if (!response.ok) throw new Error('Form submission failed.');
-
-        form.reset();
-        status.classList.add('success');
-        status.textContent = 'Thank you for your message. I will get back to you soon.';
-      } catch {
-        status.classList.add('error');
-        status.innerHTML = 'Message service is unavailable right now. Please email me directly at <a href="mailto:mohamed.rimsan@outlook.com">mohamed.rimsan@outlook.com</a>.';
-      } finally {
-        submitButton?.removeAttribute('disabled');
-      }
+    // Reveal once, and leave every section visible when JavaScript is unavailable.
+    if ('IntersectionObserver' in window && !motion.matches) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .08 });
+      document.querySelectorAll('.home-page .home-section, .home-page .foundations-section, .home-page .recommendation-section').forEach(section => observer.observe(section));
+    }
+    const filterPanel = document.querySelector('[data-filter-panel]');
+    if (filterPanel) {
+      const buttons = [...filterPanel.querySelectorAll('[data-filter]')];
+      const search = filterPanel.querySelector('[data-cert-search]');
+      const status = filterPanel.querySelector('[data-results]');
+      const isCertificates = !!search;
+      const selector = isCertificates ? '[data-cert-category]' : 'article[data-project-category]';
+      const cards = [...document.querySelectorAll(selector)];
+      let category = 'all';
+      const applyFilters = () => {
+        const query = search?.value.trim().toLocaleLowerCase() || '';
+        for (const card of cards) {
+          const categories = (card.dataset.certCategory || card.dataset.projectCategory || '').split(' ');
+          const text = `${card.dataset.certSearch || ''} ${card.textContent}`.toLocaleLowerCase();
+          card.hidden = !((category === 'all' || categories.includes(category)) && text.includes(query));
+        }
+        document.querySelectorAll('.badge-strip[data-project-category]').forEach(strip => {
+          strip.hidden = category !== 'all' && !strip.dataset.projectCategory.split(' ').includes(category);
+        });
+        document.querySelectorAll('[data-cert-section], [data-project-section]').forEach(section => {
+          const items = [...section.querySelectorAll(selector)];
+          const badge = section.querySelector('.badge-strip');
+          section.hidden = items.length > 0 && items.every(card => card.hidden) && (!badge || badge.hidden);
+        });
+        const count = cards.filter(card => !card.hidden).length;
+        if (status) status.textContent = count ? `${count} ${isCertificates ? 'credentials and learning entries' : 'projects and learning entries'} shown.` : 'No matches. Try another category or clear your search.';
+        buttons.forEach(button => {
+          const active = button.dataset.filter === category;
+          button.setAttribute('aria-pressed', String(active));
+          button.classList.toggle('active', active);
+        });
+      };
+      buttons.forEach(button => button.addEventListener('click', () => { category = button.dataset.filter; applyFilters(); }));
+      search?.addEventListener('input', applyFilters);
+      filterPanel.hidden = false;
+      applyFilters();
+    }
+    const copyStatus = document.querySelector('[data-copy-status]');
+    document.querySelectorAll('[data-copy]').forEach(button => {
+      button.hidden = false;
+      button.addEventListener('click', async () => {
+        try {
+          if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(button.dataset.copy);
+          else {
+            const field = document.createElement('textarea');
+            field.value = button.dataset.copy;
+            field.className = 'clipboard-helper';
+            field.setAttribute('readonly', '');
+            document.body.appendChild(field);
+            field.select();
+            let copied;
+            try { copied = document.execCommand('copy'); } finally { field.remove(); button.focus(); }
+            if (!copied) throw new Error('Copy unavailable');
+          }
+          if (copyStatus) copyStatus.textContent = 'Discord username copied.';
+        } catch {
+          if (copyStatus) copyStatus.textContent = 'Copy unavailable. Select and copy the displayed username instead.';
+        }
+      });
+    });
+    document.querySelectorAll('[data-contact-form]').forEach(form => {
+      const status = form.querySelector('[data-form-status]');
+      const submit = form.querySelector('[type="submit"]');
+      const reset = form.querySelector('[type="reset"]');
+      let pending = false;
+      form.addEventListener('reset', () => { if (!pending && status) status.textContent = ''; });
+      form.addEventListener('submit', async event => {
+        if (!status || !submit) return;
+        event.preventDefault();
+        if (pending || !form.reportValidity()) return;
+        pending = true;
+        submit.disabled = true;
+        if (reset) reset.disabled = true;
+        form.setAttribute('aria-busy', 'true');
+        status.className = 'form-status';
+        status.textContent = 'Sending your message…';
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 15000);
+        try {
+          const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }, signal: controller.signal });
+          if (!response.ok) throw new Error('Request rejected');
+          form.reset();
+          status.classList.add('success');
+          status.textContent = 'The message service accepted your message. Thank you for getting in touch.';
+        } catch (error) {
+          status.classList.add('error');
+          status.textContent = error.name === 'AbortError' ? 'Confirmation timed out; delivery is unknown. Your message is still here. You can email mohamed.rimsan.ar@gmail.com directly.' : 'The message service could not confirm your message. Your message is still here. Please email mohamed.rimsan.ar@gmail.com directly.';
+        } finally {
+          clearTimeout(timeout);
+          pending = false;
+          submit.disabled = false;
+          if (reset) reset.disabled = false;
+          form.removeAttribute('aria-busy');
+        }
+      });
     });
   });
-});
+  // This small shared script runs in the head, reserving the final menu layout
+  // before first paint. If it fails to load, the static navigation stays visible.
+  root.classList.add('nav-ready');
+})();

@@ -1,0 +1,119 @@
+[
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/0fa9f702-aadd-4535-b970-5b50c30e5559",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/0fa9f702-aadd-4535-b970-5b50c30e5559",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/2a20f2a9-39a4-4e27-ac3f-3bc631a463d1",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/2a20f2a9-39a4-4e27-ac3f-3bc631a463d1",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/3f78042e-bdad-4fb8-a1cb-d05fcabaec2d",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/3f78042e-bdad-4fb8-a1cb-d05fcabaec2d",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/464f873b-aec9-459f-b938-d1cdc102004d",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/464f873b-aec9-459f-b938-d1cdc102004d",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/472d824a7f7e4c44a46fbc15edf75457",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/472d824a7f7e4c44a46fbc15edf75457",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/4c45ad6a-c7c6-4d3f-918b-e86b604d0f0f",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/4c45ad6a-c7c6-4d3f-918b-e86b604d0f0f",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/dd03b799-186f-4552-b3e1-c489ca21a61c",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/dd03b799-186f-4552-b3e1-c489ca21a61c",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/f6f51586-c9ef-4855-8fc1-ea60d6d5b8e7",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/f6f51586-c9ef-4855-8fc1-ea60d6d5b8e7",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/my-rewards/detail/fd0ab1fe-81cc-49a9-b599-1cc7dd4a751f",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/my-rewards/detail/fd0ab1fe-81cc-49a9-b599-1cc7dd4a751f",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://app.letsdefend.io/user/cybersentinel",
+    "status": 200,
+    "final_url": "https://app.letsdefend.io/user/cybersentinel",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://assurex-eight.vercel.app",
+    "status": 200,
+    "final_url": "https://assurex-eight.vercel.app/signin",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://github.com/mohamedrimsan",
+    "status": 200,
+    "final_url": "https://github.com/mohamedrimsan",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://mohamedrimsan.github.io",
+    "status": 200,
+    "final_url": "https://mohamedrimsan.github.io",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://play.picoctf.org/users/cybersentinel01",
+    "result": "Not verified: <urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  {
+    "url": "https://tryhackme.com/p/cybersentinel01",
+    "status": 429,
+    "result": "HTTP error; access restrictions may prevent automated verification"
+  },
+  {
+    "url": "https://wa.me/94774047471",
+    "status": 200,
+    "final_url": "https://api.whatsapp.com/send/?phone=94774047471&text&type=phone_number&app_absent=0",
+    "method": "HEAD",
+    "scope": "Reachability only, not account or service behavior"
+  },
+  {
+    "url": "https://www.linkedin.com/in/mohamed-rimsan-a-r",
+    "status": 405,
+    "result": "HTTP error; access restrictions may prevent automated verification"
+  },
+  {
+    "url": "https://www.linkedin.com/in/nimesh-piyumantha/",
+    "status": 405,
+    "result": "HTTP error; access restrictions may prevent automated verification"
+  }
+]

@@ -1,0 +1,4 @@
+# Development/QA only. GitHub Pages requires no Python or npm build.
+beautifulsoup4>=4.14,<5
+Pillow>=11,<13
+playwright>=1.60,<2

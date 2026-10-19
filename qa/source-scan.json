@@ -1,0 +1,5 @@
+{
+  "scope": "Changed/new text files, excluding owner-supplied handoff; limited PEM private key and AWS access key ID patterns only. Not an exhaustive secret, Git-history, PDF metadata, OCR or certificate authenticity audit.",
+  "files_checked": 36,
+  "findings_count": 0
+}

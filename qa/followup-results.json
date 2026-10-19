@@ -1,0 +1,46 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "No-JS navigation, header, static scene, hidden inactive control at 320px",
+      "passed": true
+    },
+    {
+      "check": "No-JS navigation, header, static scene, hidden inactive control at 1440px",
+      "passed": true
+    },
+    {
+      "check": "Enhanced motion control remains operable and dark-only under light OS preference",
+      "passed": true
+    },
+    {
+      "check": "Recommendations title remains intact at 320px",
+      "passed": true
+    },
+    {
+      "check": "Recommendations title remains intact at 375px",
+      "passed": true
+    },
+    {
+      "check": "Recommendations title remains intact at 640px",
+      "passed": true
+    },
+    {
+      "check": "Recommendations title remains intact at 1440px",
+      "passed": true
+    }
+  ],
+  "accessibility_followup": [
+    {
+      "page": "recommendations",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "recommendations",
+      "width": 1440,
+      "violations": []
+    }
+  ]
+}

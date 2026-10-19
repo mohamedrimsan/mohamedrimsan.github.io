@@ -1,0 +1,244 @@
+{
+  "axe_version": "4.10.3",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22a",
+    "wcag22aa"
+  ],
+  "audits": [
+    {
+      "page": "index",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 121
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "page": "index",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 114
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "page": "about",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 39
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "page": "about",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 32
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "page": "experience",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 31
+        }
+      ],
+      "passes": 20
+    },
+    {
+      "page": "experience",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 24
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "page": "projects",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 37
+        }
+      ],
+      "passes": 23
+    },
+    {
+      "page": "projects",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 30
+        }
+      ],
+      "passes": 23
+    },
+    {
+      "page": "skills",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ],
+      "passes": 18
+    },
+    {
+      "page": "skills",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 38
+        }
+      ],
+      "passes": 20
+    },
+    {
+      "page": "certifications",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 56
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "page": "certifications",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 49
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "page": "recommendations",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 28
+        }
+      ],
+      "passes": 16
+    },
+    {
+      "page": "recommendations",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 21
+        }
+      ],
+      "passes": 18
+    },
+    {
+      "page": "contact",
+      "theme": "dark",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 30
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "page": "contact",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 23
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "page": "certifications dialog open",
+      "theme": "dark",
+      "width": 375,
+      "violations": [],
+      "passes": 19
+    }
+  ]
+}

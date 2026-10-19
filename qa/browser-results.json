@@ -1,0 +1,873 @@
+{
+  "passed": 102,
+  "failed": 0,
+  "not_tested": 0,
+  "checks": [
+    {
+      "check": "Chrome layout/menu index 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu index 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu about 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu experience 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu projects 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu skills 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu certifications 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu recommendations 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 1440 dark",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 1200 dark",
+      "passed": true,
+      "detail": {
+        "width": 1200,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 1199 dark",
+      "passed": true,
+      "detail": {
+        "width": 1199,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 1024 dark",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 900 dark",
+      "passed": true,
+      "detail": {
+        "width": 900,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 768 dark",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 760 dark",
+      "passed": true,
+      "detail": {
+        "width": 760,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 640 dark",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 375 dark",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Chrome layout/menu contact 320 dark",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Dark only regardless of system or previously saved light preference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Header scrolls normally at four widths, portrait loads and profile link navigates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Keyboard skip link, menu, Escape, outside click and focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "All project categories, counts, selection and native disclosures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Combined credential text/category search, counts, empty and input safety",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Certificate dialogs, all scans, lazy loading, focus, Escape and backdrop",
+      "passed": true,
+      "detail": "All 50 unique preview links opened, decoded, focused, closed and restored."
+    },
+    {
+      "check": "Contact native validation and mocked accepted / rejected / network / timeout paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Clipboard modern success, denied, fallback true and false",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Native resume download matches original PDF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Legacy redirect stays on preview host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Reduced motion, 200% CSS zoom and 640px reflow proxy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Unavailable storage does not break navigation or theme",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Disabled JS: all navigation, content, original scans and native contact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Firefox phone layout index",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "index.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout about",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "about.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout experience",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "experience.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout projects",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "projects.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout skills",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "skills.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout certifications",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "certifications.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout recommendations",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "recommendations.html"
+      }
+    },
+    {
+      "check": "Firefox phone layout contact",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "theme": "dark",
+        "route": "contact.html"
+      }
+    },
+    {
+      "check": "Firefox native certificate dialog",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "page_errors": [],
+  "axe": [],
+  "production_form_submissions": 0,
+  "zoom_scope": "CSS zoom plus layout reflow proxy; browser chrome zoom and real assistive technology are not tested."
+}
