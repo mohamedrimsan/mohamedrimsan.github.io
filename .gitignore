@@ -4,6 +4,7 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+.agents/
 
 # Logs and local diagnostics
 *.log
