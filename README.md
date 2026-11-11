@@ -51,11 +51,11 @@ The small shared script loads in the head and attaches progressive navigation, f
 
 The homepage portrait uses responsive WebP sources and a compact horizontal card on phones. Its profile link opens the About page. The shared layout keeps content within a 1200px container and adapts navigation, cards and section grids for smaller screens. Animations and pointer tilt are disabled when the operating system requests reduced motion. Without JavaScript, the decorative scene stays static.
 
-Certificate scans open in one step using native links, with no intermediate preview dialog. This also works without JavaScript.
+Certificate scans open in an accessible preview dialog when JavaScript is available. Native links open the originals in a new tab without JavaScript; badge links open the badge image directly.
 
 Keep the original professional role titles, employment dates, issuer metadata, recommendation wording and public contact methods until owner-confirmed corrections are available. Support positioning is not a replacement for actual historical titles. Microsoft 365, Active Directory and cloud administration remain learning goals. Never add invented support metrics or confidential workplace materials.
 
-When making real content changes, update that page's title, description, OG/Twitter metadata, JSON-LD and sitemap lastmod together. Preserve canonical production URLs while keeping navigation and assets relative. All modified page dates currently use 19 October 2026 (Asia/Colombo).
+When making real content changes, update that page's title, description, OG/Twitter metadata, JSON-LD and sitemap lastmod together. Preserve canonical production URLs while keeping navigation and assets relative. Home, About, Skills and Credentials were updated on 9 November 2026 (Asia/Colombo).
 
 ## Publishing and rollback
 
@@ -65,4 +65,4 @@ Public deployment records and the local tracking ref agree on `main`, most recen
 
 Review with `git status --short`, `git diff --stat`, `git diff --check` and `git diff -- <file>`. New untracked review artifacts must also be inspected. Commit the approved review changes on the review branch before a separately authorized merge/push. Keep the rollback branch. If a published redesign needs rollback, use an owner-approved revert of the release commit (or merge revert) on the publishing branch; do not force-push or rewrite history. Preserve the current PDF, verification resource and all historic routes throughout release and rollback.
 
-The Google IT Support Professional Certificate is listed as in progress (March 2026–February 2027, expected completion) on Home, About and Credentials. The credential archive contains 44 learning entries; the new program has no completion or certificate-preview claim.
+The Google IT Support Professional Certificate was completed on 30 October 2026; its scan and earned badge are linked from Credentials. Cisco IT Customer Support Basics, issued 8 November 2026, is featured with its certificate and badge on Credentials and in the About badge gallery. Skills prioritize technical support, systems foundations and application investigation, with Microsoft 365, Active Directory and cloud administration identified as learning goals.
