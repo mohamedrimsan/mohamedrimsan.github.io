@@ -1,0 +1,16 @@
+{
+  "name": "mohamed-rimsan-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static professional portfolio served by GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8765 --bind 127.0.0.1",
+    "check": "node scripts/check-js.mjs && python scripts/verify_site.py",
+    "check:js": "node scripts/check-js.mjs",
+    "check:site": "python scripts/verify_site.py",
+    "test:browser": "python scripts/browser_qa.py",
+    "test:accessibility": "python scripts/accessibility_qa.py",
+    "test:visual": "python scripts/visual_refresh_qa.py"
+  }
+}

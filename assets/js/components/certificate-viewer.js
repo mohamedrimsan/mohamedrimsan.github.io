@@ -1,5 +1,5 @@
 /* Shared certificate lightbox for certifications.html and projects.html. */
-document.addEventListener('DOMContentLoaded', () => {
+export function initCertificateViewer() {
   const links = [...document.querySelectorAll('a.cert-preview[href]')];
   if (!links.length || typeof HTMLDialogElement === 'undefined') return;
   const dialog = document.createElement('dialog');
@@ -104,4 +104,4 @@ document.addEventListener('DOMContentLoaded', () => {
   dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
   dialog.addEventListener('close', () => { img.removeAttribute('src'); gallery = []; });
   window.addEventListener('resize', () => { if (dialog.open) applyZoom(); });
-});
+}
