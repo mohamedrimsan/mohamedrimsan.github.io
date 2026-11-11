@@ -151,6 +151,8 @@ button:disabled { cursor: wait; opacity: .7; }
 .clipboard-helper { position: fixed; left: -9999px; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; padding-block: 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: var(--type-sm); }
 .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.footer-links a { display: inline-flex; align-items: center; gap: .45rem; }
+.footer-icon { width: 1.1em; height: 1.1em; flex-shrink: 0; }
 .closing-card { padding: clamp(1.5rem,4vw,3rem); }
 @media (max-width: 1199px) {
   header { flex-wrap: nowrap; }
@@ -528,4 +530,33 @@ nav a:last-child { border-color: #a78bfa66; background: #a78bfa0a; }
 @media print {
   .profile-orbit, .floating-cube, .floating-label { display: none; }
   .home-hero h1 span { background: none; -webkit-text-fill-color: black; }
+}
+
+/* Support skills and completed credentials. */
+.skill-hero-panel .metric-card { display: grid; gap: 1rem; }
+.skill-hero-panel h2 { font-size: 1.35rem; }
+.skill-card-grid .skill-level { align-self: flex-start; }
+.skill-card-grid .skill-badges { margin-top: 0; }
+.skill-card-grid .text-link { margin-top: auto; }
+.support-workflow { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1rem; counter-reset: support-step; }
+.support-workflow li { display: grid; align-content: start; gap: .75rem; padding: 1.4rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); counter-increment: support-step; }
+.support-workflow li::before { content: "0" counter(support-step); color: var(--accent); font-weight: 750; }
+.support-workflow span { color: var(--muted); }
+.certifications-page .learning-feature { grid-template-columns: minmax(160px,220px) minmax(0,1fr); align-items: center; gap: clamp(1.5rem,4vw,3rem); }
+.credential-art { display: grid; justify-items: center; gap: 1rem; }
+.credential-art img { width: 100%; max-width: 220px; height: auto; object-fit: contain; }
+.credential-art-caption { color: var(--muted); font-size: .8rem; text-align: center; }
+.credential-badge { width: 88px; height: 88px; object-fit: contain; }
+.credential-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1rem; margin-top: auto; }
+.credential-actions .cert-preview { margin-top: 0; align-self: auto; }
+.credential-actions .text-link { display: inline-flex; align-items: center; min-height: 44px; }
+.badge-card img { flex-shrink: 0; }
+@media (max-width: 900px) { .support-workflow { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 640px) {
+  .support-workflow { grid-template-columns: 1fr; }
+  .certifications-page .learning-feature { grid-template-columns: 1fr; }
+  .credential-art { justify-items: start; }
+  .credential-art img { width: 140px; }
+  .credential-actions { align-items: stretch; flex-direction: column; }
+  .credential-actions .cert-preview { align-self: stretch; }
 }
