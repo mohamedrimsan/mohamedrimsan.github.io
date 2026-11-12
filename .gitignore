@@ -30,3 +30,10 @@ _ui-*.png
 _write-test.html
 _edge-cdp-profile/
 *.tmp
+
+# Python environments and generated QA reports
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+qa/

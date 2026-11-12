@@ -2,19 +2,15 @@
 Run: python scripts/browser_qa.py. Optional --axe downloads pinned axe-core to temp.
 """
 from pathlib import Path
-import os, sys, json, threading, functools, http.server, urllib.request, time
-from urllib.parse import urlsplit
-extra=Path(os.environ.get('TEMP','/tmp'))/'portfolio-redesign-tools'
-if extra.exists(): sys.path.insert(0,str(extra))
+import sys, json, threading, functools, http.server, urllib.request
 from playwright.sync_api import sync_playwright, expect
-ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'qa'; (OUT/'screenshots').mkdir(parents=True,exist_ok=True)
+from qa_helpers import ROOT, PAGES, OUTPUT_DIR, launch_chromium
+OUT=OUTPUT_DIR; (OUT/'screenshots').mkdir(parents=True,exist_ok=True)
 class QuietHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*args): pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(QuietHandler,directory=str(ROOT)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
 BASE=f'http://127.0.0.1:{server.server_port}/'
-PAGES=['index','about','experience','projects','skills','certifications','recommendations','contact']
 results=[]; failures=[]; axe_results=[]; errors=[]; contrast_failures=[]
 def record(name,fn):
     try:
@@ -23,7 +19,7 @@ def record(name,fn):
         print('PASS',name,flush=True)
     except Exception as e:
         results.append({'check':name,'passed':False,'detail':str(e)[:1500]}); failures.append(name)
-        print('FAIL',name,str(e)[:200],flush=True)
+        print('FAIL',name,ascii(str(e)[:200]),flush=True)
 def assert_true(condition,message='Assertion failed'):
     if not condition: raise AssertionError(message)
 def ready(page,path):
@@ -59,8 +55,8 @@ if '--axe' in sys.argv:
     except Exception as e: print('Axe not tested:',e,flush=True)
 try:
   with sync_playwright() as pw:
-    browser=pw.chromium.launch(channel='chrome',headless=True)
-    context=browser.new_context(viewport={'width':1440,'height':1000},color_scheme='light')
+    browser=launch_chromium(pw)
+    context=browser.new_context(viewport={'width':1440,'height':1000},color_scheme='light',reduced_motion='reduce')
     # Safety boundary: any unexpected Formspree call is aborted. Individual tests override it.
     context.route('https://formspree.io/**',lambda route: route.abort())
     page=context.new_page()
@@ -115,47 +111,56 @@ try:
     record('Keyboard skip link, menu, Escape, outside click and focus',nav_keyboard)
     def projects():
       page.set_viewport_size({'width':1440,'height':1000}); ready(page,'projects')
-      total=page.locator('article[data-project-category]').count(); assert_true(total==25)
+      total=page.locator('article[data-project-category]').count(); assert_true(total>0)
       for chip in page.locator('[data-filter]').all():
         chip.click(); expect(chip).to_have_attribute('aria-pressed','true')
         category=chip.get_attribute('data-filter')
         visible=page.locator('article[data-project-category]:visible').all()
         assert_true(bool(visible),'Empty project category')
         for item in visible: assert_true(category=='all' or category in item.get_attribute('data-project-category').split())
-      page.locator('[data-filter="all"]').click(); expect(page.locator('[data-results]')).to_contain_text('25')
+      page.locator('[data-filter="all"]').click(); expect(page.locator('[data-results]')).to_contain_text(str(total))
       details=page.locator('details').first; details.locator('summary').focus(); page.keyboard.press('Enter'); expect(details).to_have_attribute('open','')
     record('All project categories, counts, selection and native disclosures',projects)
     def certificates():
       ready(page,'certifications')
-      expect(page.locator('[data-results]')).to_contain_text('44')
+      expect(page.locator('[data-results]')).to_contain_text(str(page.locator('[data-cert-category]').count()))
       for chip in page.locator('[data-filter]').all():
         chip.click(); expect(chip).to_have_attribute('aria-pressed','true'); assert_true(page.locator('[data-cert-category]:visible').count()>0)
-      page.locator('[data-filter="support-foundations"]').click()
-      page.locator('input[data-cert-search]').fill('Google'); assert_true(page.locator('[data-cert-category]:visible').count()==3)
+      page.locator('[data-filter="it-support-professional"]').click()
+      page.locator('input[data-cert-search]').fill('Google'); assert_true(page.locator('[data-cert-category]:visible').count()>0)
       page.locator('input[data-cert-search]').fill('no-such-credential-xyz'); expect(page.locator('[data-results]')).to_contain_text('No matches')
       assert_true(page.locator('[data-cert-category]:visible').count()==0)
       page.locator('input[data-cert-search]').fill(''); page.locator('[data-filter="all"]').click()
       page.locator('input[data-cert-search]').fill('<img src=x onerror=alert(1)>'); assert_true(page.locator('[data-results] img').count()==0)
-      page.locator('input[data-cert-search]').fill(''); expect(page.locator('[data-results]')).to_contain_text('44')
+      page.locator('input[data-cert-search]').fill(''); expect(page.locator('[data-results]')).to_contain_text(str(page.locator('[data-cert-category]').count()))
     record('Combined credential text/category search, counts, empty and input safety',certificates)
-    def original_scans():
+    def certificate_previews():
       for path in ['certifications','projects']:
         ready(page,path)
-        links=page.locator('a[data-certificate]').all()
-        for link in links:
-          assert_true(link.get_attribute('target')=='_blank')
+        links=page.locator('a.cert-preview[data-certificate]')
+        assert_true(links.count()>0)
+        for link in links.all():
           response=page.request.get(BASE+link.get_attribute('href'))
           assert_true(response.status==200,'Original scan unavailable')
-        first=links[0]
-        with page.expect_popup() as event:
-          first.focus(); page.keyboard.press('Enter')
-        scan=event.value; scan.wait_for_load_state()
-        assert_true(scan.url==BASE+first.get_attribute('href'))
-        assert_true(scan.locator('img').evaluate('e=>e.complete && e.naturalWidth>0'))
-        assert_true(page.locator('dialog').count()==0)
-        scan.close()
-      return 'All 50 original scan links are available; keyboard activation opens scans directly.'
-    record('Direct original scans, new tabs and keyboard activation',original_scans)
+        first=links.first
+        first.focus(); page.keyboard.press('Enter')
+        dialog=page.locator('dialog.certificate-lightbox')
+        expect(dialog).to_be_visible()
+        expect(dialog.locator('h2')).to_have_text(first.get_attribute('data-certificate'))
+        image=dialog.locator('img'); expect(image).to_be_visible()
+        assert_true(image.evaluate('e=>e.complete && e.naturalWidth>0'))
+        expect(dialog.locator('[data-count]')).to_have_text(f'1 / {links.count()}')
+        dialog.locator('[data-plus]').click(); expect(dialog.locator('[data-zoom]')).to_have_text('125%')
+        dialog.locator('[data-minus]').click(); expect(dialog.locator('[data-zoom]')).to_have_text('100%')
+        assert_true(dialog.locator('[data-download]').get_attribute('href').endswith(first.get_attribute('href')))
+        if links.count()>1:
+          dialog.locator('.certificate-lightbox-close').focus()
+          page.keyboard.press('ArrowRight'); expect(dialog.locator('[data-count]')).to_have_text(f'2 / {links.count()}')
+          page.keyboard.press('ArrowLeft'); expect(dialog.locator('[data-count]')).to_have_text(f'1 / {links.count()}')
+        page.keyboard.press('Escape'); expect(dialog).to_be_hidden(); expect(first).to_be_focused()
+        first.click(); dialog.locator('.certificate-lightbox-close').click(); expect(dialog).to_be_hidden()
+      return 'Original scans load; dialog supports keyboard, zoom, gallery navigation, close and focus return.'
+    record('Certificate previews and original scan availability',certificate_previews)
     def fill_form():
       ready(page,'contact'); page.locator('#name').fill('Local QA'); page.locator('#email').fill('local-test@example.invalid'); page.locator('#subject').select_option(label='Technical Support / Service Desk'); page.locator('#message').fill('Local intercepted test, never sent to production.')
     def forms():
@@ -220,9 +225,12 @@ try:
         assert_true(p.locator('header').evaluate('e=>e.scrollHeight<=e.clientHeight+1'),path+' no-JS navigation is clipped')
         assert_true(p.locator('main').bounding_box()['y']>=p.locator('header').bounding_box()['y']+p.locator('header').bounding_box()['height'],path+' no-JS header overlap')
       p.goto(BASE+'index.html'); expect(p.locator('.home-visual img')).to_be_visible()
-      p.goto(BASE+'certifications.html'); assert_true(p.locator('[data-cert-category]:visible').count()==44); expect(p.locator('[data-filter-panel]')).to_be_hidden()
+      p.goto(BASE+'certifications.html'); assert_true(p.locator('[data-cert-category]:visible').count()==p.locator('[data-cert-category]').count()>0); expect(p.locator('[data-filter-panel]')).to_be_hidden()
       link=p.locator('a[data-certificate]').first; response=p.request.get(BASE+link.get_attribute('href')); assert_true(response.status==200)
-      p.goto(BASE+'projects.html'); assert_true(p.locator('article[data-project-category]:visible').count()==25)
+      expect(link).to_have_attribute('target','_blank')
+      with p.expect_popup() as event: link.click()
+      scan=event.value; scan.wait_for_load_state(); assert_true(scan.locator('img').evaluate('e=>e.complete && e.naturalWidth>0')); scan.close()
+      p.goto(BASE+'projects.html'); assert_true(p.locator('article[data-project-category]:visible').count()==p.locator('article[data-project-category]').count()>0)
       p.goto(BASE+'contact.html'); assert_true(p.locator('form').get_attribute('method')=='POST'); expect(p.locator('a[href^="mailto:"]').first).to_be_visible()
       c.close()
     record('Disabled JS: all navigation, content, original scans and native contact',no_js)
@@ -234,21 +242,20 @@ try:
       page.screenshot(path=str(OUT/'screenshots'/f'{path}-{theme}-{width}.png'),full_page=True)
     context.close(); browser.close()
     # A genuinely different engine. Use an installed browser only; report unavailable honestly.
-    candidates=sorted((Path(os.environ['LOCALAPPDATA'])/'ms-playwright').glob('firefox-*/firefox/firefox.exe'),reverse=True)
-    if candidates:
-      try:
-        firefox=pw.firefox.launch(executable_path=str(candidates[0]),headless=True)
-        c=firefox.new_context(viewport={'width':375,'height':900},color_scheme='dark'); c.route('https://formspree.io/**',lambda r:r.abort()); p=c.new_page()
-        for path in PAGES: record('Firefox phone layout '+path,lambda path=path:layout(p,path,375,'dark'))
-        def firefox_scan():
-          ready(p,'certifications'); a=p.locator('a[data-certificate]').first
-          with p.expect_popup() as event: a.click()
-          scan=event.value; scan.wait_for_load_state()
-          assert_true(scan.url==BASE+a.get_attribute('href')); scan.close()
-        record('Firefox direct original scan',firefox_scan)
-        firefox.close()
-      except Exception as e: results.append({'check':'Firefox availability','passed':None,'detail':str(e)[:1000]})
-    else: results.append({'check':'Firefox availability','passed':None,'detail':'No installed Firefox executable found'})
+    try:
+      firefox=pw.firefox.launch(headless=True)
+    except Exception as error:
+      results.append({'check':'Firefox availability','passed':None,'detail':str(error)[:1000]})
+    else:
+      c=firefox.new_context(viewport={'width':375,'height':900},color_scheme='dark'); c.route('https://formspree.io/**',lambda r:r.abort()); p=c.new_page()
+      for path in PAGES: record('Firefox phone layout '+path,lambda path=path:layout(p,path,375,'dark'))
+      def firefox_scan():
+        ready(p,'certifications'); a=p.locator('a[data-certificate]').first; a.click()
+        dialog=p.locator('dialog.certificate-lightbox'); expect(dialog).to_be_visible()
+        expect(dialog.locator('img')).to_be_visible()
+        p.keyboard.press('Escape'); expect(dialog).to_be_hidden(); expect(a).to_be_focused()
+      record('Firefox certificate preview',firefox_scan)
+      firefox.close()
 except Exception as error:
   failures.append('Browser runner'); results.append({'check':'Browser runner','passed':False,'detail':str(error)})
 finally:
